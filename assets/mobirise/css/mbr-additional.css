@@ -740,6 +740,36 @@ hr {
 .btn-danger-outline:hover::before {
   background-color: #000000 !important;
 }
+.cid-rS5sFWPc6D {
+  padding-top: 225px;
+  padding-bottom: 225px;
+}
+.cid-rS5sFWPc6D .mbr-section-title {
+  margin-bottom: 1.8rem;
+}
+.cid-rS5sFWPc6D .mbr-text {
+  margin-bottom: 2.7rem;
+}
+@media (max-width: 767px) {
+  .cid-rS5sFWPc6D .align-center {
+    text-align: center;
+  }
+}
+.cid-rS5sFWPc6D h3 {
+  color: #908F90;
+  margin-bottom: 2.3rem;
+}
+.cid-rS5sFWPc6D .mbr-section-btn {
+  margin-top: 4rem;
+}
+@media (min-width: 767px) {
+  .cid-rS5sFWPc6D .row {
+    margin: 0;
+  }
+}
+.cid-rS5sFWPc6D .btn {
+  margin-left: 0rem;
+}
 .cid-rR8bs0uTgv .dropdown-item:before {
   font-family: MobiriseIcons !important;
   content: '\e966';
