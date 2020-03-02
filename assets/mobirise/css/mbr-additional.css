@@ -1143,6 +1143,28 @@ hr {
     padding-right: 2rem;
   }
 }
+.cid-rS5Fd6uKc1 {
+  padding-top: 225px;
+  padding-bottom: 225px;
+}
+.cid-rS5Fd6uKc1 .mbr-section-title {
+  margin-bottom: 1.8rem;
+}
+.cid-rS5Fd6uKc1 .mbr-text {
+  margin-bottom: 2.7rem;
+}
+@media (max-width: 767px) {
+  .cid-rS5Fd6uKc1 .align-center {
+    text-align: center;
+  }
+}
+.cid-rS5Fd6uKc1 H1 {
+  text-align: left;
+}
+.cid-rS5Fd6uKc1 .mbr-text,
+.cid-rS5Fd6uKc1 .mbr-section-btn {
+  text-align: left;
+}
 .cid-rRBKNNng2r {
   padding-top: 240px;
   padding-bottom: 0px;
@@ -1270,7 +1292,7 @@ hr {
   }
 }
 .cid-rS5wC37ZMk .box {
-  background-image: url("../../../assets/images/office-30.jpg");
+  background-image: url("../../../assets/images/office-32.jpg");
   background-size: cover;
   background-position: center;
   height: 380px;
