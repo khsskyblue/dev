@@ -850,11 +850,6 @@ hr {
 .cid-rR8bs0uTgv .navbar.collapsed.opened .dropdown-menu {
   top: 0;
 }
-@media (min-width: 992px) {
-  .cid-rR8bs0uTgv .navbar.collapsed.opened:not(.navbar-short) .navbar-collapse {
-    max-height: calc(98.5vh - 3.8rem);
-  }
-}
 .cid-rR8bs0uTgv .navbar.collapsed .dropdown-menu {
   background: transparent !important;
 }
