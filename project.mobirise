@@ -43,8 +43,8 @@
       }
     ],
     "imageResize": true,
-    "uniqCompNum": 9,
-    "versionPublish": "5.0.0",
+    "uniqCompNum": 10,
+    "versionPublish": "4.12.2",
     "favicon": false,
     "robotsSwitcher": false,
     "sitemapSwitcher": false,
@@ -682,11 +682,60 @@
           "_name": "video2",
           "_customHTML": "<section class=\"header8\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" plugins=\"PlayerVimeo\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"3\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"3\" condition=\"fullScreen == false\">\n        <header>Color</header>\n        <input type=\"color\" title=\"Icon Color\" name=\"iconColor\" value=\"#000000\">\n        <input type=\"color\" title=\"Icon Border Color\" name=\"iconBGColor\" value=\"#000000\">\n        <input type=\"image\" name=\"video\" value=\"../_images/team/team11.jpg\" title=\"Background Image\">\n        <input type=\"text\" title=\"Modal Video\" name=\"modalVideo\" value=\"https://vimeo.com/94651406\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n          <input type=\"image\" value=\"../_images/man-3.jpg\" title=\"Image\">\n          <input type=\"color\" value=\"#000000\" title=\"Color\">\n          <input type=\"video\" value=\"https://vimeo.com/94651406\" title=\"Video\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.4\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div class=\"container align-center\">\n      <div class=\"row justify-content-md-center\">\n        <div class=\"mbr-white col-md-12 col-12 col-lg-12\">\n          <div class=\"box\">\n            <div class=\"mbr-media show-modal align-center py-2\" data-modal=\".modalWindow\">\n              <div class=\"icon-wrap\">\n                <span mbr-icon class=\"mbr-iconfont fa-play fa\"></span>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n    <div>\n        <div class=\"modalWindow\" style=\"display: none;\">\n            <div class=\"modalWindow-container\">\n                <div class=\"modalWindow-video-container\">\n                    <div class=\"modalWindow-video\">\n                        <iframe width=\"100%\" height=\"100%\" data-src=\"{{modalVideo}}\" frameborder=\"0\" allowfullscreen=\"1\"></iframe>\n                    </div>\n                    <a class=\"close\" role=\"button\" data-dismiss=\"modal\">\n                        <span aria-hidden=\"true\" class=\"mbri-close mbr-iconfont closeModal\"></span>\n                        <span class=\"sr-only\">Close</span>\n                    </a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
           "_cid": "rS8zKMvm2E",
+          "_anchor": "video2-8",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            ".mbr-section-title": {
+              "margin-bottom": "1.8rem"
+            },
+            ".mbr-text": {
+              "margin-bottom": "2.7rem"
+            },
+            "@media (max-width: 767px)": {
+              ".align-center": {
+                "text-align": "center"
+              }
+            },
+            "h3": {
+              "color": "#908F90",
+              "margin-bottom": "2.3rem"
+            },
+            ".mbr-section-btn": {
+              "margin-top": "4rem"
+            },
+            "@media (min-width: 767px)": {
+              ".row": {
+                "margin": "0"
+              }
+            },
+            ".btn": {
+              "margin-left": "0rem"
+            }
+          },
+          "_name": "header5",
+          "_customHTML": "<section group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"15\" step=\"1\" value=\"15\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"15\" step=\"1\" value=\"15\" condition=\"fullScreen == false\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Show Arrow\" name=\"showArrow\" checked>\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\">\n          <input type=\"image\" title=\"Background Image\" value=\"../_images/man-3.jpg\">\n          <input type=\"color\" title=\"Background Color\" value=\"#767676\">\n          <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=lRTtMcx6rSM\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n    <div class=\"container align-left\">\n      <div class=\"row\">\n        <div class=\"mbr-white col-md-12 col-lg-12\">\n          <h3 class=\"mbr-section-subtitle mbr-semibold align-left mbr-light mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showSubTitle\">ABOUT US</h3>\n          <h1 class=\"mbr-section-title mbr-semibold mbr-fonts-style align-left\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title, .mbr-section-btn\">We Make Website <br>\n            For Humans.</h1>\n          <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit sed <br> do\n            eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn align-left\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-danger-outline\" href=\"https://mobirise.co\" data-app-placeholder=\"Type Text\">Getting Started Today</a></div>\n        </div>\n      </div>\n    </div>\n    <div mbr-if=\"showArrow\" class=\"mbr-arrow hidden-sm-down\" aria-hidden=\"true\">\n      <a href=\"#next\">\n        <i class=\"mbri-down mbr-iconfont\"></i>\n      </a>\n    </div>\n</section>",
+          "_cid": "rS8HhuwSaW",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
           "_params": {},
-          "_anchor": "video2-8"
+          "_anchor": "header5-9"
         },
         {
           "alias": false,
@@ -2488,11 +2537,11 @@
           "_name": "counters1",
           "_customHTML": "<section class=\"counters1 counters\" roup=\"Counters\" plugins=\"ViewportChecker\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"25\" step=\"1\" value=\"2\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"25\" step=\"1\" value=\"2\" condition=\"fullScreen == false\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <select title=\"Cards Count\" name=\"cardsAmount\">\n          <option value=\"1\">1</option>\n          <option value=\"2\">2</option>\n          <option value=\"3\" selected>3</option>\n        </select>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n          <input type=\"image\" title=\"Image\" value=\"../_images/man-3.jpg\" parallax>\n          <input type=\"color\" title=\"Color\" value=\"#000000\" selected>\n          <input type=\"video\" title=\"Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n    <div class=\"container\">\n        <div class=\"row\">\n            <div class=\"col-md-12 col-lg-5 col-12 m-auto text-block\">\n              <h1 class=\"mbr-section-title mbr-regular pb-3 mbr-fonts-style mbr-black\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">What We Do.</h1>\n              <h2 class=\"mbr-section-subtitle mbr-regular pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showSubTitle\">Lorem ipsum dolor sit amet</h2>\n              <p class=\"mbr-text mbr-light mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dui enim, pharetra at auctor vitae,\n                mollis nec risus. Phasellus sagittis lectus at suscipit pulvinar.<br>\n              </p>\n            </div>\n            <div class=\"col-lg-7 col-md-12 col-12 align-center img-box\">\n              <div class=\"row justify-content-center\">\n                <div class=\"card align-center col-12 col-md-4\" mbr-class=\"{'col-lg-3': cardsAmount == '4','col-lg-4': cardsAmount == '3'}\">\n                    <div class=\"panel-item\">\n                      <div class=\"card-img\" mbr-if=\"showIcons\">\n                        <span mbr-icon class=\"mbri-mobirise mbr-iconfont\"></span>\n                      </div>\n                      <div class=\"card-text\">\n                        <h3 class=\"count mbr-regular mbr-fonts-style mbr-black\" mbr-theme-style=\"display-2\">\n                            2842</h3>\n                        <h4 class=\"mbr-content-title count-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".count-title\">\n                            Projects \n                        </h4>\n                      </div>\n                    </div>\n                </div>\n                <div class=\"card align-center col-12 col-md-4\" mbr-if=\"cardsAmount>1\" mbr-class=\"{'col-lg-3': cardsAmount == '4','col-lg-4': cardsAmount == '3'}\">\n                    <div class=\"panel-item\">\n                      <div class=\"card-img\" mbr-if=\"showIcons\">\n                        <span mbr-icon class=\"mbri-touch-swipe mbr-iconfont\"></span>\n                      </div>\n                      <div class=\"card-text\">\n                        <h3 class=\"count mbr-regular mbr-fonts-style mbr-black\" mbr-theme-style=\"display-2\">\n                            163</h3>\n                        <h4 class=\"mbr-content-title count-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".count-title\">\n                            Ideas\n                        </h4>\n                      </div>\n                    </div>\n                </div>\n                <div class=\"card align-center col-12 col-md-4\" mbr-if=\"cardsAmount>2\" mbr-class=\"{'col-lg-3': cardsAmount == '4','col-lg-4': cardsAmount == '3'}\">\n                  <div class=\"panel-item\">\n                    <div class=\"card-img\" mbr-if=\"showIcons\">\n                      <span mbr-icon class=\"mbri-responsive mbr-iconfont\"></span>\n                    </div>\n                    <div class=\"card-text\">\n                      <h3 class=\"count mbr-regular mbr-fonts-style mbr-black\" mbr-theme-style=\"display-2\">\n                        123</h3>\n                      <h4 class=\"mbr-content-title count-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".count-title\">\n                        Users</h4>\n                    </div>\n                  </div>\n                </div>\n              </div>\n            </div>\n        </div>\n    </div>\n</section>",
           "_cid": "rS8zaX6W0C",
+          "_anchor": "counters1-7",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {},
-          "_anchor": "counters1-7"
+          "_params": {}
         },
         {
           "alias": false,
