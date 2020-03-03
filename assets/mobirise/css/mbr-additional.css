@@ -1165,6 +1165,105 @@ hr {
 .cid-rS5Fd6uKc1 .mbr-section-btn {
   text-align: left;
 }
+.cid-rS5Fd6uKc1 H3 {
+  text-align: left;
+}
+.cid-rS8zKMvm2E {
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+@media (max-width: 992px) {
+  .cid-rS8zKMvm2E {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+.cid-rS8zKMvm2E .box {
+  background-image: url("../../../assets/images/team11.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 550px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cid-rS8zKMvm2E .icon-wrap {
+  border: 4px solid #000000 !important;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+  text-shadow: 0px 0 6px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0 6px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+.cid-rS8zKMvm2E .icon-wrap span {
+  padding-left: 8px;
+}
+.cid-rS8zKMvm2E .mbr-media span {
+  font-size: 28px;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  transition: all 0.25s;
+  color: #000000 !important;
+}
+.cid-rS8zKMvm2E .mbr-media span.mbri-play:before {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-35%);
+}
+.cid-rS8zKMvm2E .modalWindow {
+  position: fixed;
+  z-index: 5000;
+  left: 0;
+  top: 0;
+  background-color: rgba(61, 61, 61, 0.65);
+  width: 100%;
+  height: 100%;
+}
+.cid-rS8zKMvm2E .modalWindow .modalWindow-container {
+  display: table-cell;
+  vertical-align: middle;
+}
+.cid-rS8zKMvm2E .modalWindow .modalWindow-video {
+  height: calc(44.9943757vw);
+  width: 80vw;
+  margin: 0 auto;
+}
+.cid-rS8zKMvm2E a.close {
+  position: absolute;
+  right: 4vw;
+  top: 4vh;
+  color: #ffffff;
+  z-index: 5000000;
+  font-size: 37px;
+  background: #000;
+  padding: 20px;
+  border-radius: 50%;
+}
+.cid-rS8zKMvm2E a.close:hover {
+  color: #ffffff;
+}
+@media (max-width: 576px) {
+  .cid-rS8zKMvm2E {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+  .cid-rS8zKMvm2E .box {
+    height: 250px;
+  }
+}
+@media (min-width: 767px) {
+  .cid-rS8zKMvm2E .row {
+    margin: 0;
+  }
+}
 .cid-rRBKNNng2r {
   padding-top: 240px;
   padding-bottom: 0px;
@@ -1292,7 +1391,7 @@ hr {
   }
 }
 .cid-rS5wC37ZMk .box {
-  background-image: url("../../../assets/images/office-32.jpg");
+  background-image: url("../../../assets/images/office-30.jpg");
   background-size: cover;
   background-position: center;
   height: 380px;
@@ -2430,9 +2529,13 @@ hr {
 }
 .cid-rRBLDGBzvq .mbr-text {
   margin-top: 1.4rem;
+  text-align: left;
 }
 .cid-rRBLDGBzvq h2 {
   color: #ffffff;
+  text-align: left;
+}
+.cid-rRBLDGBzvq H3 {
   text-align: left;
 }
 .cid-rRBLEDOm2b {
@@ -2520,6 +2623,82 @@ hr {
 }
 .cid-rRBLF5chif .align-center {
   text-align: center;
+}
+.cid-rS8zaX6W0C {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #000000;
+}
+.cid-rS8zaX6W0C .img-box {
+  position: relative;
+}
+.cid-rS8zaX6W0C .card {
+  display: flex;
+}
+.cid-rS8zaX6W0C .img1 {
+  position: absolute;
+  bottom: 0;
+  right: 3rem;
+  z-index: 1;
+}
+.cid-rS8zaX6W0C .img2 {
+  position: absolute;
+  top: 0;
+  left: 3rem;
+  z-index: 2;
+}
+@media (max-width: 992px) {
+  .cid-rS8zaX6W0C .img1 {
+    right: 1rem;
+  }
+  .cid-rS8zaX6W0C .img2 {
+    left: 1rem;
+  }
+  .cid-rS8zaX6W0C .img-box {
+    margin-top: 1rem;
+  }
+  .cid-rS8zaX6W0C .text-block {
+    text-align: center;
+  }
+  .cid-rS8zaX6W0C .mbr-section-title {
+    text-align: center;
+  }
+}
+@media (max-width: 576px) {
+  .cid-rS8zaX6W0C .card-text {
+    display: flex;
+    align-items: center;
+  }
+  .cid-rS8zaX6W0C .count {
+    padding-right: 16px;
+  }
+  .cid-rS8zaX6W0C img {
+    width: 60%;
+  }
+  .cid-rS8zaX6W0C .card {
+    flex-direction: column;
+    align-items: center;
+    padding: 0!important;
+  }
+}
+.cid-rS8zaX6W0C h3,
+.cid-rS8zaX6W0C h4 {
+  margin: 0;
+  padding: 0;
+}
+.cid-rS8zaX6W0C .mbr-content-title {
+  color: #e9204f;
+}
+@media (min-width: 767px) {
+  .cid-rS8zaX6W0C .row {
+    margin: 0;
+  }
+}
+.cid-rS8zaX6W0C H3 {
+  color: #ffffff;
+}
+.cid-rS8zaX6W0C H1 {
+  color: #ffffff;
 }
 .cid-rRBLFM5ZPV {
   padding-top: 0px;
