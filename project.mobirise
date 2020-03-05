@@ -61,9 +61,9 @@
         "main": true,
         "title": "Home",
         "meta_descr": "",
-        "header_custom": "<script src=\"https://codefog.github.io/jquery-gradientify/jquery.gradientify.min.js\"></script>",
+        "header_custom": "",
         "footer_custom": "<script>\n            $(document).ready(function() {\n                $(\"cid-rRBLClVCqS\").gradientify({\n                    gradients: [\n                        { start: [49,76,172], stop: [242,159,191] },\n                        { start: [255,103,69], stop: [240,154,241] },\n                        { start: [33,229,241], stop: [235,236,117] }\n                    ]\n                });\n            });\n        </script>",
-        "html_before": ""
+        "html_before": "<script src=\"https://codefog.github.io/jquery-gradientify/jquery.gradientify.min.js\"></script>"
       },
       "components": [
         {
