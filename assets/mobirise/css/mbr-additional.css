@@ -1805,7 +1805,7 @@ hr {
   }
 }
 .cid-rS5wC37ZMk .box {
-  background-image: url("../../../assets/images/office-30.jpg");
+  background-image: url("../../../assets/images/office-35.jpg");
   background-size: cover;
   background-position: center;
   height: 380px;
@@ -4881,7 +4881,7 @@ hr {
 }
 .cid-rZjDrIPyUs {
   padding-top: 120px;
-  padding-bottom: 120px;
+  padding-bottom: 0px;
   background: #e1201d;
 }
 .cid-rZjDrIPyUs img {
@@ -4910,6 +4910,44 @@ hr {
     flex: 0 0 12.5%;
     max-width: 12.5%;
   }
+}
+.cid-rZjDrIPyUs .row {
+  justify-content: center!important;
+}
+.cid-rZkA18D1I3 {
+  padding-top: 0px;
+  padding-bottom: 120px;
+  background: #e1201d;
+}
+.cid-rZkA18D1I3 img {
+  width: 125px;
+  margin: auto;
+  filter: brightness(250%);
+}
+.cid-rZkA18D1I3 .card {
+  transition: opacity 0.3s;
+  height: fit-content;
+  padding: 1rem 0rem;
+  opacity: 0.5;
+  margin-bottom: 1rem;
+}
+.cid-rZkA18D1I3 .card:hover {
+  opacity: 0.9;
+}
+.cid-rZkA18D1I3 H1 {
+  color: #ffffff;
+}
+.cid-rZkA18D1I3 .row {
+  justify-content: space-between;
+}
+@media (min-width: 992px) {
+  .cid-rZkA18D1I3 .col-lg-1 {
+    flex: 0 0 12.5%;
+    max-width: 12.5%;
+  }
+}
+.cid-rZkA18D1I3 .row {
+  justify-content: center!important;
 }
 .cid-rZjTijep5n {
   background-color: #e1201d;
