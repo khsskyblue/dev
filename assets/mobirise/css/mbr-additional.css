@@ -1805,7 +1805,7 @@ hr {
   }
 }
 .cid-rS5wC37ZMk .box {
-  background-image: url("../../../assets/images/office-30.jpg");
+  background-image: url("../../../assets/images/office-31.jpg");
   background-size: cover;
   background-position: center;
   height: 380px;
@@ -4327,19 +4327,19 @@ hr {
   fill: #000000;
 }
 .cid-LIiLYoZsfq {
-  background-color: #000000;
+  background-color: #ffffff;
 }
 .cid-LIiLYoZsfq .cloud1 {
-  fill: #ffffff;
+  fill: #000000;
   opacity: 0.5;
 }
 .cid-LIiLYoZsfq .cloud2 {
-  fill: #ffffff;
+  fill: #000000;
 }
 .cid-rZg0EaOiiN {
   padding-top: 75px;
   padding-bottom: 75px;
-  background-color: #ffffff;
+  background-color: #000000;
 }
 .cid-rZg0EaOiiN H1 {
   color: #232323;
@@ -4417,6 +4417,16 @@ hr {
 }
 .cid-rZg0EaOiiN .count-title {
   color: #767676;
+}
+.cid-rZjwErpFPO {
+  background-color: #000000;
+}
+.cid-rZjwErpFPO .cloud1 {
+  fill: #ffffff;
+  opacity: 0.5;
+}
+.cid-rZjwErpFPO .cloud2 {
+  fill: #ffffff;
 }
 .cid-LRqWj0xQD0 {
   background-color: #ffffff;
