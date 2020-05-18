@@ -1493,7 +1493,8 @@ hr {
   align-self: center;
 }
 .cid-rZjg5qNtzM .mbr-text {
-  text-align: center;
+  text-align: right;
+  color: #e1201d;
 }
 .cid-rZjg5qNtzM .pt-0 {
   padding-top: 0 !important;
@@ -1560,7 +1561,7 @@ hr {
   content: "";
 }
 .cid-rZjg5qNtzM .modal-content {
-  background: #000000;
+  background: #ffffff;
   position: relative;
   display: flex;
   -ms-flex-direction: column;
@@ -1615,7 +1616,8 @@ hr {
   line-height: 1.5;
   width: 100%;
   margin: 0;
-  text-align: center;
+  text-align: left;
+  color: #e1201d;
 }
 .cid-rZjg5qNtzM .modal-body {
   position: relative;
@@ -2085,7 +2087,7 @@ hr {
   }
 }
 .cid-rS5wC37ZMk .box {
-  background-image: url("../../../assets/images/office-31.jpg");
+  background-image: url("../../../assets/images/office-32.jpg");
   background-size: cover;
   background-position: center;
   height: 380px;
