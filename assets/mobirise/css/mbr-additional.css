@@ -4639,7 +4639,7 @@ hr {
 }
 .cid-5MNYt6b24b .sidebar {
   z-index: 1001;
-  background-color: #149dcc;
+  background-color: #ffffff;
   opacity: 0.5;
   position: fixed;
   transition: width 0.2s ease;
@@ -4651,7 +4651,7 @@ hr {
   display: flex;
   height: 100%;
   list-style: none;
-  margin-top: 0px;
+  margin-top: 200px;
   margin-right: 0px;
   margin-bottom: 0px;
   margin-left: 0px;
@@ -4703,7 +4703,7 @@ hr {
     width: var(--sidebar-width);
   }
   .cid-5MNYt6b24b .sidebar:hover {
-    width: 14rem;
+    width: 50rem;
     opacity: 1;
   }
   .cid-5MNYt6b24b .sidebar .sidebar__nav {
