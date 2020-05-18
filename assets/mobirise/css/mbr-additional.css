@@ -4716,8 +4716,8 @@ hr {
   fill: #e1201d;
 }
 .cid-rZjDrIPyUs {
-  padding-top: 45px;
-  padding-bottom: 45px;
+  padding-top: 120px;
+  padding-bottom: 120px;
   background: #e1201d;
 }
 .cid-rZjDrIPyUs img {
@@ -4746,9 +4746,6 @@ hr {
     flex: 0 0 12.5%;
     max-width: 12.5%;
   }
-}
-.cid-rZjDrIPyUs .row {
-  justify-content: center!important;
 }
 .cid-VtrEPDIzQh .row,
 .cid-VtrEPDIzQh .rowUp {
