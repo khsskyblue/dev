@@ -5333,6 +5333,69 @@
           "_global": false,
           "_once": false,
           "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            ".hidden": {
+              "display": "none"
+            },
+            ".witsec-socialbar": {
+              "position": "fixed",
+              "top": "50%",
+              "-webkit-transform": "translateY(-50%)",
+              "-ms-transform": "translateY(-50%)",
+              "transform": "translateY(-50%)",
+              "z-index": "99999"
+            },
+            ".witsec-socialbar a": {
+              "display": "block",
+              "text-align": "center",
+              "transition": "all 0.3s ease",
+              "color": "@iconColor",
+              "padding": "unit(@padding, ~'rem')",
+              "font-size": "unit(@fontSize, ~'rem')",
+              "border-radius": "unit(@borderRadius, ~'%')"
+            },
+            ".witsec-socialbar .icon": {
+              "margin": "unit(@iconSpacing, ~'rem')"
+            },
+            ".witsec-socialbar a:hover": {
+              "background-color": "@hoverColor"
+            },
+            ".witsec-socialbar .icon1": {
+              "background": "@bgColorIcon1",
+              "color": "@iconColor"
+            },
+            ".witsec-socialbar .icon2": {
+              "background": "@bgColorIcon2",
+              "color": "@iconColor"
+            },
+            ".witsec-socialbar .icon3": {
+              "background": "@bgColorIcon3",
+              "color": "@iconColor"
+            },
+            ".witsec-socialbar .icon4": {
+              "background": "@bgColorIcon4",
+              "color": "@iconColor"
+            },
+            ".witsec-socialbar .icon5": {
+              "background": "@bgColorIcon5",
+              "color": "@iconColor"
+            },
+            ".witsec-socialbar .icon6": {
+              "background": "@bgColorIcon6",
+              "color": "@iconColor"
+            }
+          },
+          "_name": "design-block",
+          "_customHTML": "<section>\n\n<mbr-parameters>\n<!-- Block parameters controls (Blue \"Gear\" panel) -->\n<input type=\"range\" inline title=\"Social Icons\" name=\"socialIcons\" min=\"0\" max=\"6\" step=\"1\" value=\"6\">\n<input type=\"range\" inline title=\"Border Radius\" name=\"borderRadius\" min=\"0\" max=\"50\" step=\"10\" value=\"0\">\n<input type=\"range\" inline title=\"Padding\" name=\"padding\" min=\"0\" max=\"2\" step=\"0.1\" value=\"1\">\n<input type=\"range\" inline title=\"Font Size\" name=\"fontSize\" min=\"1\" max=\"4\" step=\"0.2\" value=\"4\">\n<input type=\"range\" inline title=\"Icon Spacing\" name=\"iconSpacing\" min=\"0\" max=\"2\" step=\"0.1\" value=\"0\">\n<input type=\"color\" title=\"Icon Color\" name=\"iconColor\" value=\"#ffffff\">\n<input type=\"color\" title=\"Hover Color\" name=\"hoverColor\" value=\"#000000\">\n<input type=\"color\" title=\"Background Color Icon 1\" name=\"bgColorIcon1\" value=\"#3B5998\">\n<input type=\"color\" title=\"Background Color Icon 2\" name=\"bgColorIcon2\" value=\"#55ACEE\">\n<input type=\"color\" title=\"Background Color Icon 3\" name=\"bgColorIcon3\" value=\"#dd4b39\">\n<input type=\"color\" title=\"Background Color Icon 4\" name=\"bgColorIcon4\" value=\"#007bb5\">\n<input type=\"color\" title=\"Background Color Icon 5\" name=\"bgColorIcon5\" value=\"#bb0000\">\n<input type=\"color\" title=\"Background Color Icon 6\" name=\"bgColorIcon6\" value=\"#232323\">\n<!-- End block parameters -->\n</mbr-parameters>\n\n<div class=\"witsec-socialbar\">\n<a href=\"https://www.facebook.com\" class=\"icon icon1\"><span mbr-icon class=\"socicon socicon-facebook mbr-iconfont mbr-iconfont-btn\"></span></a>\n<a href=\"https://twitter.com\" mbr-if=\"socialIcons > 1\" class=\"icon icon2\"><span mbr-icon class=\"socicon socicon-twitter mbr-iconfont mbr-iconfont-btn\"></span></a>\n<a href=\"https://www.google.com\" mbr-if=\"socialIcons > 2\" class=\"icon icon3\"><span mbr-icon class=\"socicon socicon-googleplus mbr-iconfont mbr-iconfont-btn\"></span></a>\n<a href=\"https://www.linkedin.com\" mbr-if=\"socialIcons > 3\" class=\"icon icon4\"><span mbr-icon class=\"socicon socicon-linkedin mbr-iconfont mbr-iconfont-btn\"></span></a>\n<a href=\"https://www.youtube.com\" mbr-if=\"socialIcons > 4\" class=\"icon icon5\"><span mbr-icon class=\"socicon socicon-youtube mbr-iconfont mbr-iconfont-btn\"></span></a>\n<a href=\"mailto:info@yourdomain.com\" mbr-if=\"socialIcons > 5\" class=\"icon icon6\"><span mbr-icon class=\"socicon socicon-mail mbr-iconfont mbr-iconfont-btn\"></span></a>\n</div>\n\n<div mbr-class=\"{'hidden': isPublish}\" style=\"padding:1rem\">Click the \"gear\" icon to change the layout of the social bar. This text will be removed on preview/publish.</div>\n\n</section>",
+          "_cid": "S5i5pMLvaS",
+          "_anchor": "design-block-S5i5pMLvaS",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
         }
       ]
     }

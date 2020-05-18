@@ -1805,7 +1805,7 @@ hr {
   }
 }
 .cid-rS5wC37ZMk .box {
-  background-image: url("../../../assets/images/office-31.jpg");
+  background-image: url("../../../assets/images/office-30.jpg");
   background-size: cover;
   background-position: center;
   height: 380px;
@@ -4782,4 +4782,54 @@ hr {
 }
 .cid-VtrEPDIzQh .secondColor {
   fill: #0f7699;
+}
+.cid-S5i5pMLvaS .hidden {
+  display: none;
+}
+.cid-S5i5pMLvaS .witsec-socialbar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 99999;
+}
+.cid-S5i5pMLvaS .witsec-socialbar a {
+  display: block;
+  text-align: center;
+  transition: all 0.3s ease;
+  color: #ffffff;
+  padding: 1rem;
+  font-size: 4rem;
+  border-radius: 0%;
+}
+.cid-S5i5pMLvaS .witsec-socialbar .icon {
+  margin: 0rem;
+}
+.cid-S5i5pMLvaS .witsec-socialbar a:hover {
+  background-color: #000000;
+}
+.cid-S5i5pMLvaS .witsec-socialbar .icon1 {
+  background: #3b5998;
+  color: #ffffff;
+}
+.cid-S5i5pMLvaS .witsec-socialbar .icon2 {
+  background: #55acee;
+  color: #ffffff;
+}
+.cid-S5i5pMLvaS .witsec-socialbar .icon3 {
+  background: #dd4b39;
+  color: #ffffff;
+}
+.cid-S5i5pMLvaS .witsec-socialbar .icon4 {
+  background: #007bb5;
+  color: #ffffff;
+}
+.cid-S5i5pMLvaS .witsec-socialbar .icon5 {
+  background: #bb0000;
+  color: #ffffff;
+}
+.cid-S5i5pMLvaS .witsec-socialbar .icon6 {
+  background: #232323;
+  color: #ffffff;
 }
