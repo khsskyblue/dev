@@ -16,8 +16,8 @@
         "display1Size": 4.9,
         "display2Font": "Roboto",
         "display2Size": 3,
-        "display5Font": "Roboto",
-        "display5Size": 1.5,
+        "display5Font": "Black Han Sans",
+        "display5Size": "1.5",
         "display7Font": "Roboto",
         "display7Size": 1,
         "display4Font": "Roboto",
@@ -43,6 +43,11 @@
         "css": "'Roboto', sans-serif",
         "name": "Roboto",
         "url": "https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
+      },
+      {
+        "css": "'Black Han Sans', sans-serif",
+        "name": "Black Han Sans",
+        "url": "https://fonts.googleapis.com/css?family=Black+Han+Sans:400"
       }
     ],
     "imageResize": true,
@@ -5521,7 +5526,7 @@
             }
           },
           "_name": "extClients2",
-          "_customHTML": "<section group=\"Additional Blocks\" class=\"extClients\">\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n    <mbr-parameters>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"8\">\n        <input type=\"range\" inline title=\"Items\" name=\"items\" min=\"1\" max=\"8\" value=\"5\" step=\"1\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#e1201d\">\n    </mbr-parameters>\n    <!-- End block parameters -->\n    <div class=\"container-fluid\">\n        <div class=\"row justify-content-space-between\">\n            <div class=\"col-md-12\">\n                <h1 class=\"mbr-section-title mbr-regular pb-3 align-center mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">Our Clients</h1>\n            </div>\n            <div class=\"col-lg-1 col-md-3 card\" mbr-if=\"items > 0\">\n                <img src=\"@PROJECT_PATH@/assets/images/112.png\">\n            </div>\n            <div class=\"col-lg-1 col-md-3 card\" mbr-if=\"items > 1\">\n                <img src=\"@PROJECT_PATH@/assets/images/213.png\">\n            </div>\n            <div class=\"col-lg-1 col-md-3 card\" mbr-if=\"items > 2\">\n                <img src=\"@PROJECT_PATH@/assets/images/314.png\">\n            </div>\n            <div class=\"col-lg-1 col-md-3 card\" mbr-if=\"items > 3\">\n                <img src=\"@PROJECT_PATH@/assets/images/415.png\">\n            </div>\n            <div class=\"col-lg-1 col-md-3 card\" mbr-if=\"items > 4\">\n                <img src=\"@PROJECT_PATH@/assets/images/516.png\">\n            </div>\n            <div class=\"col-lg-1 col-md-3 card\" mbr-if=\"items > 5\">\n                <img src=\"@PROJECT_PATH@/assets/images/112.png\">\n            </div>\n            <div class=\"col-lg-1 col-md-3 card\" mbr-if=\"items > 6\">\n                <img src=\"@PROJECT_PATH@/assets/images/213.png\">\n            </div>\n            <div class=\"col-lg-1 col-md-3 card\" mbr-if=\"items > 7\">\n                <img src=\"@PROJECT_PATH@/assets/images/314.png\">\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section group=\"Additional Blocks\" class=\"extClients\">\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n    <mbr-parameters>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"8\">\n        <input type=\"range\" inline title=\"Items\" name=\"items\" min=\"1\" max=\"8\" value=\"5\" step=\"1\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#e1201d\">\n    </mbr-parameters>\n    <!-- End block parameters -->\n    <div class=\"container-fluid\">\n        <div class=\"row justify-content-space-between\">\n            <div class=\"col-md-12\">\n                <h1 class=\"mbr-section-title mbr-regular pb-3 align-center mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">Our Clients</h1>\n            </div>\n            <div class=\"col-lg-1 col-md-3 card\" mbr-if=\"items > 0\">\n                <img src=\"@PROJECT_PATH@/assets/images/118.png\">\n            </div>\n            <div class=\"col-lg-1 col-md-3 card\" mbr-if=\"items > 1\">\n                <img src=\"@PROJECT_PATH@/assets/images/219.png\">\n            </div>\n            <div class=\"col-lg-1 col-md-3 card\" mbr-if=\"items > 2\">\n                <img src=\"@PROJECT_PATH@/assets/images/320.png\">\n            </div>\n            <div class=\"col-lg-1 col-md-3 card\" mbr-if=\"items > 3\">\n                <img src=\"@PROJECT_PATH@/assets/images/421.png\">\n            </div>\n            <div class=\"col-lg-1 col-md-3 card\" mbr-if=\"items > 4\">\n                <img src=\"@PROJECT_PATH@/assets/images/522.png\">\n            </div>\n            <div class=\"col-lg-1 col-md-3 card\" mbr-if=\"items > 5\">\n                <img src=\"@PROJECT_PATH@/assets/images/118.png\">\n            </div>\n            <div class=\"col-lg-1 col-md-3 card\" mbr-if=\"items > 6\">\n                <img src=\"@PROJECT_PATH@/assets/images/219.png\">\n            </div>\n            <div class=\"col-lg-1 col-md-3 card\" mbr-if=\"items > 7\">\n                <img src=\"@PROJECT_PATH@/assets/images/320.png\">\n            </div>\n        </div>\n    </div>\n</section>",
           "_anchor": "extClients2-1a",
           "_isUserblock": true,
           "_sourceTheme": "studiom4",
