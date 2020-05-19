@@ -810,8 +810,8 @@ hr {
   padding: .235rem 1.5rem;
 }
 .cid-rR8bs0uTgv .navbar .navbar-collapse {
-  -webkit-justify-content: flex-end;
-  justify-content: flex-end;
+  -webkit-justify-content: center;
+  justify-content: center;
   z-index: 1;
 }
 .cid-rR8bs0uTgv .navbar.collapsed .nav-item .nav-link::before {
