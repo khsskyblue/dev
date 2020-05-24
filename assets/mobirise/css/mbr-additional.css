@@ -1231,6 +1231,9 @@ hr {
 }
 .cid-rVRGiLsJ3c .mbr-section-title {
   margin-bottom: 1.8rem;
+  background: linear-gradient(to right, #f00, #00f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .cid-rVRGiLsJ3c .mbr-text {
   margin-bottom: 2.7rem;
