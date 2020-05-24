@@ -1474,6 +1474,9 @@ hr {
 }
 .cid-rZjdtdvXGf .mbr-section-title {
   letter-spacing: .1em;
+  background: linear-gradient(to right, #f00, #00f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .cid-rZjdtdvXGf .icon-description {
   padding-top: 1rem;
