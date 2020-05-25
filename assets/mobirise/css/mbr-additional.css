@@ -800,12 +800,12 @@ hr {
 .cid-rR8bs0uTgv .navbar {
   min-height: 77px;
   transition: all .3s;
-  background: #101010;
+  background: #000000;
   background: none;
 }
 .cid-rR8bs0uTgv .navbar.opened {
   transition: all .3s;
-  background: #101010 !important;
+  background: #000000 !important;
 }
 .cid-rR8bs0uTgv .navbar .dropdown-item {
   padding: .235rem 1.5rem;
@@ -901,7 +901,7 @@ hr {
   }
 }
 .cid-rR8bs0uTgv .navbar.navbar-short {
-  background: #101010 !important;
+  background: #000000 !important;
   min-height: 60px;
   opacity: 0.9;
 }
@@ -970,7 +970,7 @@ hr {
   }
 }
 .cid-rR8bs0uTgv .navbar.navbar-expand-lg .dropdown .dropdown-menu {
-  background: #101010;
+  background: #000000;
 }
 .cid-rR8bs0uTgv .navbar.navbar-expand-lg .dropdown .dropdown-menu .dropdown-submenu {
   margin: 0;
@@ -1929,7 +1929,7 @@ hr {
   }
 }
 .cid-rS5wC37ZMk .box {
-  background-image: url("../../../assets/images/office-35.jpg");
+  background-image: url("../../../assets/images/office-311.jpg");
   background-size: cover;
   background-position: center;
   height: 380px;
