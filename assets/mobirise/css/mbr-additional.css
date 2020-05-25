@@ -13,9 +13,6 @@ body {
   font-size: 4.9rem;
   font-weight: 800;
   letter-spacing: -2px;
-  background: linear-gradient(to right, #f00, #00f);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 .display-1 > .mbr-iconfont {
   font-size: 7.84rem;
@@ -25,9 +22,6 @@ body {
   font-size: 3rem;
   line-height: 1.2;
   font-weight: 700;
-  background: linear-gradient(to right, #f00, #00f);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 .display-2 > .mbr-iconfont {
   font-size: 4.8rem;
@@ -1120,8 +1114,14 @@ hr {
     padding-right: 2rem;
   }
 }
+.cid-rS5Fd6uKc1 {
+  background-image: url("../../../assets/images/man-3.jpg");
+}
 .cid-rS5Fd6uKc1 .mbr-section-title {
   margin-bottom: 1.8rem;
+  background: linear-gradient(to right, #ff0000, #0000ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .cid-rS5Fd6uKc1 .mbr-text {
   margin-bottom: 2.7rem;
@@ -1137,9 +1137,11 @@ hr {
 .cid-rS5Fd6uKc1 .mbr-text,
 .cid-rS5Fd6uKc1 .mbr-section-btn {
   text-align: left;
+  color: #ffffff;
 }
 .cid-rS5Fd6uKc1 H3 {
   text-align: left;
+  color: #ffffff;
 }
 .cid-rZJOHm2alK {
   padding-top: 45px;
@@ -1237,9 +1239,9 @@ hr {
 }
 .cid-rVRGiLsJ3c .mbr-section-title {
   margin-bottom: 1.8rem;
-  background: linear-gradient(to right, #f00, #00f);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background: linear-gradient(to right, #ff0000, #0000ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .cid-rVRGiLsJ3c .mbr-text {
   margin-bottom: 2.7rem;
@@ -1325,6 +1327,9 @@ hr {
 }
 .cid-rTYDvVgDbO H1 {
   color: #ffffff;
+  background: linear-gradient(to right, #ff0000, #0000ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .cid-rTYDvVgDbO .mbr-text,
 .cid-rTYDvVgDbO .mbr-section-btn {
@@ -1432,6 +1437,9 @@ hr {
 }
 .cid-rS8HhuwSaW .mbr-section-title {
   margin-bottom: 1.8rem;
+  background: linear-gradient(to right, #ff0000, #0000ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .cid-rS8HhuwSaW .mbr-text {
   margin-bottom: 2.7rem;
@@ -1458,6 +1466,9 @@ hr {
 }
 .cid-rS8KDzW50W .mbr-section-title {
   margin-bottom: 1.8rem;
+  background: linear-gradient(to right, #ff0000, #0000ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .cid-rS8KDzW50W .mbr-text {
   margin-bottom: 2.7rem;
@@ -1483,9 +1494,9 @@ hr {
 }
 .cid-rZjdtdvXGf .mbr-section-title {
   letter-spacing: .1em;
-  background: linear-gradient(to right, #f00, #00f);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background: linear-gradient(to right, #ff0000, #0000ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .cid-rZjdtdvXGf .icon-description {
   padding-top: 1rem;
@@ -1617,6 +1628,9 @@ hr {
 }
 .cid-rTnIT0Uqqf .mbr-section-title {
   margin-bottom: 1.5rem;
+  background: linear-gradient(to right, #ff0000, #0000ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 @media (max-width: 767px) {
   .cid-rTnIT0Uqqf .card {
@@ -1701,6 +1715,9 @@ hr {
   position: relative;
   margin-bottom: 1.3rem;
   padding-bottom: 0.5rem;
+  background: linear-gradient(to right, #ff0000, #0000ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .cid-rSJqlQP3Dw .mbr-iconfont {
   transition: 700ms cubic-bezier(0.17, 0.67, 0, 1.01);
@@ -1772,6 +1789,9 @@ hr {
 }
 .cid-rSJqlQP3Dw .mbr-section-title {
   font-weight: 800;
+  background: linear-gradient(to right, #ff0000, #0000ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .cid-rSJqlQP3Dw h2 {
   margin-bottom: 0;
