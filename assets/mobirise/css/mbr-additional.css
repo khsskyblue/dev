@@ -5438,3 +5438,26 @@ hr {
     text-align: center;
   }
 }
+.cid-8PGYkVzm87 {
+  padding-top: 30px;
+  padding-bottom: 45px;
+  background-color: #000000;
+}
+.cid-8PGYkVzm87 body {
+  min-height: 80vh;
+}
+.cid-8PGYkVzm87 .form-control:not(select) {
+  padding: 1.5rem 0.5rem;
+}
+.cid-8PGYkVzm87 select.form-control {
+  height: 52px;
+  padding-left: 0.5rem;
+}
+.cid-8PGYkVzm87 .form-control::placeholder {
+  color: #ccc;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+.cid-8PGYkVzm87 .form-control:focus {
+  box-shadow: none;
+}
