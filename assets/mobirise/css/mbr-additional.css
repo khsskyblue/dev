@@ -1929,7 +1929,7 @@ hr {
   }
 }
 .cid-rS5wC37ZMk .box {
-  background-image: url("../../../assets/images/office-313.jpg");
+  background-image: url("../../../assets/images/office-320.jpg");
   background-size: cover;
   background-position: center;
   height: 380px;
@@ -5593,29 +5593,6 @@ hr {
     margin-top: 2rem;
   }
 }
-.cid-hngyJughEL {
-  padding-top: 30px;
-  padding-bottom: 45px;
-  background-color: #000000;
-}
-.cid-hngyJughEL body {
-  min-height: 80vh;
-}
-.cid-hngyJughEL .form-control:not(select) {
-  padding: 1.5rem 0.5rem;
-}
-.cid-hngyJughEL select.form-control {
-  height: 52px;
-  padding-left: 0.5rem;
-}
-.cid-hngyJughEL .form-control::placeholder {
-  color: #ccc;
-  font-weight: bold;
-  font-size: 0.9rem;
-}
-.cid-hngyJughEL .form-control:focus {
-  box-shadow: none;
-}
 .cid-8PGYkVzm87 {
   padding-top: 30px;
   padding-bottom: 45px;
@@ -5660,5 +5637,28 @@ hr {
   font-size: 0.9rem;
 }
 .cid-2UrvSr6r3k .form-control:focus {
+  box-shadow: none;
+}
+.cid-hngyJughEL {
+  padding-top: 30px;
+  padding-bottom: 45px;
+  background-color: #000000;
+}
+.cid-hngyJughEL body {
+  min-height: 80vh;
+}
+.cid-hngyJughEL .form-control:not(select) {
+  padding: 1.5rem 0.5rem;
+}
+.cid-hngyJughEL select.form-control {
+  height: 52px;
+  padding-left: 0.5rem;
+}
+.cid-hngyJughEL .form-control::placeholder {
+  color: #ccc;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+.cid-hngyJughEL .form-control:focus {
   box-shadow: none;
 }
