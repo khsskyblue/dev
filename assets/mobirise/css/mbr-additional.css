@@ -768,92 +768,6 @@ hr {
 .btn-danger-outline:hover::before {
   background-color: #000000 !important;
 }
-.cid-SNPQv1Hz8T {
-  padding-top: 0px;
-  padding-bottom: 0px;
-  background-color: #000000;
-}
-.cid-SNPQv1Hz8T .mbr-section {
-  text-align: center;
-  color: #fff;
-}
-.cid-SNPQv1Hz8T .carousel {
-  margin: 30px 0;
-  background: #ccc;
-}
-.cid-SNPQv1Hz8T .carousel .item {
-  text-align: center;
-  overflow: hidden;
-  height: 475px;
-}
-.cid-SNPQv1Hz8T .item img {
-  max-width: 100%;
-  width: 100%;
-  margin: 0 auto;
-}
-.cid-SNPQv1Hz8T .carousel .carousel-control {
-  width: 50px;
-  height: 50px;
-  background: #000;
-  margin: auto 0;
-  opacity: 0.8;
-}
-.cid-SNPQv1Hz8T .carousel .carousel-control:hover {
-  opacity: 0.9;
-}
-.cid-SNPQv1Hz8T .carousel .carousel-control i {
-  font-size: 41px;
-  margin-top: 3px;
-}
-.cid-SNPQv1Hz8T .carousel-caption h3,
-.cid-SNPQv1Hz8T .carousel-caption p {
-  color: #fff;
-  display: inline-block;
-  font-family: 'Oswald', sans-serif;
-  text-shadow: none;
-  margin-bottom: 20px;
-}
-.cid-SNPQv1Hz8T .carousel-caption h3 {
-  background: #232323;
-  padding: 12px 24px;
-  font-size: 40px;
-  text-transform: uppercase;
-}
-.cid-SNPQv1Hz8T .carousel-caption p {
-  background: #7f1933;
-  padding: 10px 20px;
-  font-size: 20px;
-  font-weight: 300;
-}
-.cid-SNPQv1Hz8T .carousel-indicators li,
-.cid-SNPQv1Hz8T .carousel-indicators li.active {
-  margin-left: 4px;
-  margin-right: 4px;
-}
-.cid-SNPQv1Hz8T .carousel-indicators li.active {
-  background: #7f1933;
-  border-color: #7f1933;
-}
-.cid-SNPQv1Hz8T .carousel .nav {
-  background: #eee;
-}
-.cid-SNPQv1Hz8T .carousel .nav a {
-  color: #333;
-  border-radius: 0;
-  font-size: 85%;
-  padding: 10px 16px;
-  background: transparent;
-}
-.cid-SNPQv1Hz8T .carousel .nav .nav-item.active a {
-  color: #fff;
-  background: #7f1933;
-}
-.cid-SNPQv1Hz8T .carousel .nav strong {
-  display: block;
-  font-family: 'Roboto', sans-serif;
-  font-size: 110%;
-  text-transform: uppercase;
-}
 .cid-rR8bs0uTgv .dropdown-item:before {
   font-family: MobiriseIcons !important;
   content: '\e966';
@@ -3851,7 +3765,7 @@ hr {
   padding-bottom: 1.5rem;
 }
 .cid-rZjNncd5nf {
-  background-image: url("../../../assets/images/396.jpg");
+  background-image: url("../../../assets/images/39.jpg");
 }
 .cid-rZjNncd5nf .mbr-section {
   padding: 0;
