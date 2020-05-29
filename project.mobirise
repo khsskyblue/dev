@@ -89,123 +89,93 @@
         {
           "alias": false,
           "_styles": {
-            "p": {
-              "color": "#ecf0f1",
-              "line-height": "28px",
-              "font-size": "15px",
-              "padding-top": "50px"
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-section": {
+              "text-align": "center",
+              "color": "#fff"
             },
-            "DIV": {
-              "color": "#ffffff"
+            ".carousel": {
+              "margin": "30px 0",
+              "background": "#ccc"
             },
-            "H10": {
-              "color": "#767676"
+            ".carousel .item": {
+              "text-align": "center",
+              "overflow": "hidden",
+              "height": "475px"
             },
-            ".hidden": {
-              "display": "none"
+            ".item img": {
+              "max-width": "100%",
+              "width": "100%",
+              "margin": "0 auto"
             },
-            ".sidebar": {
-              "z-index": "1001",
-              "background-color": "@bgcolormenu",
-              "opacity": "@Opacitybarmenu",
-              "position": "fixed",
-              "transition": "width 0.2s ease"
+            ".carousel .carousel-control": {
+              "width": "50px",
+              "height": "50px",
+              "background": "#000",
+              "margin": "auto 0",
+              "opacity": "0.8"
             },
-            ".sidebar nav": {
-              "height": "100%"
+            ".carousel .carousel-control:hover": {
+              "opacity": "0.9"
             },
-            ".sidebar .sidebar__nav": {
-              "display": "flex",
-              "height": "100%",
-              "list-style": "none",
-              "margin-top": "(@paddingTopmenu * 1px)",
-              "margin-right": "0px",
-              "margin-bottom": "0px",
-              "margin-left": "0px",
-              "padding": "0"
+            ".carousel .carousel-control i": {
+              "font-size": "41px",
+              "margin-top": "3px"
             },
-            ".sidebar .sidebar__nav .sidebar__nav__link": {
-              "align-items": "center",
-              "color": "@bgcolormenu2",
-              "display": "flex",
-              "padding-left": "20px",
-              "text-decoration": "none",
-              "transition": "color 0.2s ease, background-color 0.2s ease"
+            ".carousel-caption h3, .carousel-caption p": {
+              "color": "#fff",
+              "display": "inline-block",
+              "font-family": "'Oswald', sans-serif",
+              "text-shadow": "none",
+              "margin-bottom": "20px"
             },
-            ".sidebar .sidebar__nav .sidebar__nav__link:hover": {
-              "background-color": "@bgcolormenu1",
-              "color": "@bgcolormenu3"
+            ".carousel-caption h3": {
+              "background": "@tbgColor",
+              "padding": "12px 24px",
+              "font-size": "40px",
+              "text-transform": "uppercase"
             },
-            ".sidebar .sidebar__nav .sidebar__nav__text": {
-              "display": "none",
-              "margin-left": "10px",
-              "margin-right": "auto",
-              "white-space": "nowrap"
+            ".carousel-caption p": {
+              "background": "@stbgColor",
+              "padding": "10px 20px",
+              "font-size": "20px",
+              "font-weight": "300"
             },
-            ".sidebar .sidebar__nav i": {
-              "align-items": "center",
-              "display": "flex",
-              "justify-content": "center"
+            ".carousel-indicators li, .carousel-indicators li.active": {
+              "margin-left": "4px",
+              "margin-right": "4px"
             },
-            "@media (max-width: 572px)": {
-              ".sidebar": {
-                "bottom": "0",
-                "width": "100%"
-              },
-              ".sidebar .sidebar__nav": {
-                "justify-content": "center"
-              },
-              ".sidebar .sidebar__nav .sidebar__nav__link": {
-                "height": "100%",
-                "padding": "0.75em"
-              },
-              ".sidebar .sidebar__nav i": {
-                "font-size": "2rem"
-              }
+            ".carousel-indicators li.active": {
+              "background": "@inbgColor",
+              "border-color": "@inbgColor"
             },
-            "@media (min-width: 572px)": {
-              ".sidebar": {
-                "height": "100vh",
-                "left": "0",
-                "width": "var(--sidebar-width)"
-              },
-              ".sidebar:hover": {
-                "width": "(@widthsize * 1rem)",
-                "opacity": "@OpacitybarmenuHover"
-              },
-              ".sidebar .sidebar__nav": {
-                "flex-direction": "column"
-              },
-              "& when (@lastchild) and (@paddingTopmenu = 0)": {
-                ".sidebar .sidebar__nav li:last-child": {
-                  "margin-top": "auto"
-                }
-              },
-              ".sidebar .sidebar__nav .sidebar__nav__link": {
-                "padding": "1em"
-              },
-              ".sidebar:hover .sidebar__nav .sidebar__nav__text": {
-                "display": "inline"
-              },
-              ".sidebar .sidebar__nav i": {
-                "font-size": "2.5rem"
-              }
+            ".carousel .nav": {
+              "background": "#eee"
             },
-            "@media (max-height: 434px)": {
-              ".sidebar": {
-                "overflow-y": "scroll"
-              }
+            ".carousel .nav a": {
+              "color": "#333",
+              "border-radius": "0",
+              "font-size": "85%",
+              "padding": "10px 16px",
+              "background": "transparent"
             },
-            ":root": {
-              "--sidebar-width": "4.5em"
+            ".carousel .nav .nav-item.active a": {
+              "color": "#fff",
+              "background": "@inbgColor"
+            },
+            ".carousel .nav strong": {
+              "display": "block",
+              "font-family": "'Roboto', sans-serif",
+              "font-size": "110%",
+              "text-transform": "uppercase"
             }
           },
           "_name": "design-block",
-          "_customHTML": "<section mbr-id=\"_anchor\" class=\"_customHTML\">\n \n  \n    <mbr-parameters>\n<hr><header>Menu Configuration</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTopmenu\" min=\"0\" max=\"200\" step=\"1\" value=\"0\">\n      <input type=\"range\" inline title=\"Width  Hover\" name=\"widthsize\" min=\"14\" max=\"50\" step=\"1\" value=\"14\">\n      <input type=\"checkbox\" title=\"Show Logo\" name=\"showLogo\" checked>\n      <input type=\"checkbox\" title=\"Brand Name\" name=\"showName\" checked>\n         <input type=\"range\" title=\"Logo Size\" inline name=\"logoSize\" min=\"2\" max=\"8\" step=\"0.1\" value=\"8\" condition=\"showLogo\">\n         <input type=\"range\" title=\"Icon Size\" inline name=\"iconSize\" min=\"30\" max=\"60\" step=\"1\" value=\"30\">      \n      <input type=\"range\" inline title=\"Items Count\" name=\"iconsCount\" min=\"1\" max=\"10\" step=\"1\" value=\"1\">  \n        <input type=\"color\" title=\"Bar Color\" name=\"bgcolormenu\" value=\"#000000\">\n             <input type=\"range\" title=\"Opacity\" inline name=\"Opacitybarmenu\" min=\"0\" max=\"1\" step=\"0.1\" value=\"1\"> \n                   <input type=\"range\" title=\"Opacity Hover\" inline name=\"OpacitybarmenuHover\" min=\"0\" max=\"1\" step=\"0.1\" value=\"1\">  \n        <input type=\"color\" title=\"Hover Color\" name=\"bgcolormenu1\" value=\"#cccccc\">\n        <input type=\"color\" title=\"Icon Color\" name=\"bgcolormenu2\" value=\"#ffffff\">\n        <input type=\"color\" title=\"Icon Hover Color\" name=\"bgcolormenu3\" value=\"#0f7699\">\n        <input type=\"range\" inline title=\"Items Count\" name=\"iconsCount\" min=\"1\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"checkbox\" title=\"Icon at Bottom\" name=\"lastchild\" condition=\"paddingTopmenu==0\">\n\n\n    </mbr-parameters> \n\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n\t<aside class=\"sidebar\">\n\t\t\t<nav>\n\t\t\t\t<ul class=\"sidebar__nav\">\n                         \n         \n \t\t\t\t\t<li mbr-if=\"showLogo\">\n\t\t\t\t\t\t<a href=\"http://www.google.be\" class=\"sidebar__nav__link\">\n\t\t\t\t         <span class=\"sidebar__nav__text\"> <img src=\"@PROJECT_PATH@/assets/images/271085593075211-128x118-1.png\" alt=\"Mobirise\" mbr-style=\"{'height': logoSize + 'rem'}\" title></span>\n                          </a>\n\t\t\t\t\t</li>\n                   \t<li mbr-if=\"showName\">\n\t\t\t\t\t\t<a href=\"http://www.google.be\" class=\"sidebar__nav__link\">\n                          <span class=\"sidebar__nav__text\" mbr-text>We Make Website<br> For Humans.</span>\n                          </a>\n\t\t\t\t\t</li>\n                  \t<li>\n\t\t\t\t\t\t<a href=\"index.html#header5-9\" class=\"sidebar__nav__link\">\n\t\t\t\t\t\t\t<i mbr-icon class=\"mbr-iconfont mbri-italic\" style=\"font-size: {{iconSize}}px;\"></i>\n                          \t<span class=\"sidebar__nav__text\" mbr-text>소개</span>\n                        </a>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li mbr-if=\"iconsCount > 1\">\n\t\t\t\t\t\t<a href=\"index.html#features4-b\" class=\"sidebar__nav__link\">\n\t\t\t\t\t\t\t<i mbr-icon class=\"mbr-iconfont mbri-cash\" style=\"font-size: {{iconSize}}px;\"></i>\n                          \t<span class=\"sidebar__nav__text\" mbr-text>비지니스</span>\n\t\t\t\t\t\t</a>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li mbr-if=\"iconsCount > 2\">\n\t\t\t\t\t\t<a href=\"#\" class=\"sidebar__nav__link\">\n\t\t\t\t\t\t\t<i mbr-icon class=\"mbr-iconfont mbri-android\" style=\"font-size: {{iconSize}}px;\"></i>\n                          \t<span class=\"sidebar__nav__text\" mbr-text>포트폴리오</span>\n\t\t\t\t\t\t</a>\n\t\t\t\t\t</li>\n                  \t<li mbr-if=\"iconsCount > 3\">\n\t\t\t\t\t\t<a href=\"#\" class=\"sidebar__nav__link\">\n\t\t\t\t\t\t\t<i mbr-icon class=\"mbr-iconfont mbri-cart-full\" style=\"font-size: {{iconSize}}px;\"></i>\n                          \t<span class=\"sidebar__nav__text\" mbr-text>블로그</span>\n\t\t\t\t\t\t</a>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li mbr-if=\"iconsCount > 4\">\n\t\t\t\t\t\t<a href=\"#\" class=\"sidebar__nav__link\">\n\t\t\t\t\t\t\t<i mbr-icon class=\"mbr-iconfont mbri-apple\" style=\"font-size: {{iconSize}}px;\"></i>\n                          \t<span class=\"sidebar__nav__text\" mbr-text>문의</span>\n\t\t\t\t\t\t</a>\n\t\t\t\t\t</li>\n                  \t<li mbr-if=\"iconsCount > 5\">\n\t\t\t\t\t\t<a href=\"#\" class=\"sidebar__nav__link\">\n\t\t\t\t\t\t\t<i mbr-icon class=\"mbr-iconfont mbri-sun\" style=\"font-size: {{iconSize}}px;\"></i>\n                          \t<span class=\"sidebar__nav__text\" mbr-text>Page 6</span>\n\t\t\t\t\t\t</a>\n\t\t\t\t\t</li>\n                  \t\t\t\t\t<li mbr-if=\"iconsCount > 6\">\n\t\t\t\t\t\t<a href=\"#\" class=\"sidebar__nav__link\">\n\t\t\t\t\t\t\t<i mbr-icon class=\"mbr-iconfont mbri-question\" style=\"font-size: {{iconSize}}px;\"></i>\n                          \t<span class=\"sidebar__nav__text\" mbr-text>Page 7</span>\n\t\t\t\t\t\t</a>\n\t\t\t\t\t</li>\n                  \t\t\t\t\t<li mbr-if=\"iconsCount > 7\">\n\t\t\t\t\t\t<a href=\"#\" class=\"sidebar__nav__link\">\n\t\t\t\t\t\t\t<i mbr-icon class=\"mbr-iconfont mbri-github\" style=\"font-size: {{iconSize}}px;\"></i>\n                          \t<span class=\"sidebar__nav__text\" mbr-text>Page 8</span>\n\t\t\t\t\t\t</a>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li mbr-if=\"iconsCount > 8\">\n\t\t\t\t\t\t<a href=\"#\" class=\"sidebar__nav__link\">\n\t\t\t\t\t\t\t<i mbr-icon class=\"mbr-iconfont mbri-setting3\" style=\"font-size: {{iconSize}}px;\"></i>\n                          \t<span class=\"sidebar__nav__text\" mbr-text>Page 9</span>\n\t\t\t\t\t\t</a>\n\t\t\t\t\t</li>\n                  \t\t\t\t\t<li mbr-if=\"iconsCount > 9\">\n\t\t\t\t\t\t<a href=\"#\" class=\"sidebar__nav__link\">\n\t\t\t\t\t\t\t<i mbr-icon class=\"mbr-iconfont mbri-rocket\" style=\"font-size: {{iconSize}}px;\"></i>\n                          \t<span class=\"sidebar__nav__text\" mbr-text>Page 10</span>\n\t\t\t\t\t\t</a>\n\t\t\t\t\t</li>\n\n\t\t\t\t</ul>\n\t\t\t</nav>\n\t\t</aside>\n\n <div mbr-class=\"{'hidden': isPublish}\" style=\"padding:1rem; background-color:#c1c1c1;\">\n   <div class=\"align-center\">\n              <h10> <br><br><br><br><br><br>Simply Left Menu<br><br>\n        Click the \"gear\" icon to change the layout of the Simply Left Menu bar. This text will be removed on preview/publish.<br><br><br><br><br><br></h10>\n\t\t\t\t\n    </div></div>\n</section>",
-          "_cid": "z3k3mM84IT",
-          "_anchor": "design-block-z3k3mM84IT",
-          "_PHPplaceholders": [],
-          "_JSplaceholders": [],
+          "_customHTML": "<section mbr-id=\"_slider_with_tab\" class=\"mbr-section header slider_with_text_button\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#000000\">\n      <input type=\"color\" title=\"Title Bg Color\" name=\"tbgColor\" value=\"#232323\">\n      <input type=\"color\" title=\"SubTitle Bg Color\" name=\"stbgColor\" value=\"#7f1933\">\n      <input type=\"color\" title=\"Indicator Bg Color\" name=\"inbgColor\" value=\"#7f1933\">\n      <input type=\"checkbox\" title=\"Show Title\" name=\"showtitle\" checked>\n      <input type=\"checkbox\" title=\"Show Sub Title\" name=\"showsubtitle\" checked>\n      <input type=\"checkbox\" title=\"Show Navigator\" name=\"shownavi\" checked>\n      <select title=\"Content Width\" name=\"widthContent\">\n            <option value=\"1\" selected>Full Width</option>\n            <option value=\"2\">None Full Width</option>\n        </select>\n      <select title=\"Slider Count\" name=\"slidercount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n        <option value=\"4\" selected>4</option>\n        </select>\n    <!-- End block parameters -->\n    </mbr-parameters> \n<div mbr-class=\"{ 'fullwidth': widthContent == 1, 'container': widthContent == 2}\">\n\t<div class=\"row\">\n\t\t<div class=\"col-md-12\">\n\t\t\t<div id=\"myCarousel\" class=\"carousel slide\" data-ride=\"carousel\">\n\t\t\t\t<!-- Wrapper for carousel items -->\n\t\t\t\t<div class=\"carousel-inner\">\n\t\t\t\t\t<div class=\"item carousel-item active\" mbr-if=\"slidercount > 0\">\n\t\t\t\t\t\t<img src=\"@PROJECT_PATH@/assets/images/39.jpg\" alt title>\n\t\t\t\t\t\t<div class=\"carousel-caption\">\n\t\t\t\t\t\t\t<h3 mbr-if=\"showtitle\">Amazing Digital Experience</h3>\n\t\t\t\t\t\t\t<p mbr-if=\"showsubtitle\">Pulvinar leo id risus pellentesque vestibulum. Sed diam libero, sodales eget sapien bibendum.</p>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\t\n\t\t\t\t\t<div class=\"item carousel-item\" mbr-if=\"slidercount > 1\">\n\t\t\t\t\t\t<img src=\"https://cdn.pixabay.com/photo/2020/05/26/09/01/night-5222267__340.jpg\" alt>\n\t\t\t\t\t\t<div class=\"carousel-caption\">\n\t\t\t\t\t\t\t<h3 mbr-if=\"showtitle\">Live Monitoring Tools</h3>\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t<p mbr-if=\"showsubtitle\">Nullam hendrerit justo non leo aliquet imperdiet. Etiam sagittis lectus condime dapibus vitae.</p>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"item carousel-item\" mbr-if=\"slidercount > 2\">\n\t\t\t\t\t\t<img src=\"@PROJECT_PATH@/assets/images/man.jpg\" alt title>\n\t\t\t\t\t\t<div class=\"carousel-caption\">\n\t\t\t\t\t\t\t<h3 mbr-if=\"showtitle\">Attractive Pricing</h3>\n\t\t\t\t\t\t\t<p mbr-if=\"showsubtitle\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pellentesque tempor quis.</p>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"item carousel-item\" mbr-if=\"slidercount > 3\">\n\t\t\t\t\t\t<img src=\"https://cdn.pixabay.com/photo/2020/05/20/07/01/glencoe-5195121__340.jpg\" alt>\n\t\t\t\t\t\t<div class=\"carousel-caption\">\n\t\t\t\t\t\t\t<h3 mbr-if=\"showtitle\">Award Winning Support</h3>\n\t\t\t\t\t\t\t<p mbr-if=\"showsubtitle\">Nullam hendrerit justo non leo aliquet imperdiet. Etiam in sagittis lectus ultrices placerat.</p>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<!-- End Carousel Inner -->\n\t\t\t\t<ul class=\"nav nav-pills nav-justified\" mbr-if=\"slidercount > 0\">\n\t\t\t\t\t<li data-target=\"#myCarousel\" data-slide-to=\"0\" class=\"nav-item\" mbr-if=\"slidercount > 0\" mbr-text=\"\"><a href=\"#\" class=\"nav-link\"><strong>About</strong>Lorem ipsum dolor sit amet</a></li>\n\t\t\t\t\t<li data-target=\"#myCarousel\" data-slide-to=\"1\" class=\"nav-item active\" mbr-if=\"slidercount > 1\" mbr-text=\"\"><a href=\"#\" class=\"nav-link\"><strong>Features</strong> Nesciunt stumpown odio aliqua</a></li>\n\t\t\t\t\t<li data-target=\"#myCarousel\" data-slide-to=\"2\" class=\"nav-item\" mbr-if=\"slidercount > 2\" mbr-text=\"\"><a href=\"#\" class=\"nav-link\"><strong>Pricing</strong> Oullam hendrerit justom leow</a></li>\n\t\t\t\t\t<li data-target=\"#myCarousel\" data-slide-to=\"3\" class=\"nav-item\" mbr-if=\"slidercount > 3\" mbr-text=\"\"><a href=\"#\" class=\"nav-link\"><strong>Support</strong> Proin suscipit non adipiscing</a></li>\n\t\t\t\t</ul>\n              <!-- Carousel controls -->\n\t\t\t\t<a class=\"carousel-control left carousel-control-prev\" href=\"#myCarousel\" data-slide=\"prev\" mbr-if=\"slidercount > 1 &amp;&amp; shownavi\">\n\t\t\t\t\t<i class=\"fa fa-angle-left\"></i>\n\t\t\t\t</a>\n\t\t\t\t<a class=\"carousel-control right carousel-control-next\" href=\"#myCarousel\" data-slide=\"next\" mbr-if=\"slidercount > 1 &amp;&amp; shownavi\">\n\t\t\t\t\t<i class=\"fa fa-angle-right\"></i>\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n  </div>\n  <script type=\"text/javascript\">\n\t$(document).ready(function(){\n\t\t// Highlight bottom nav links\n\t\tvar clickEvent = false;\n\t\t$(\"#myCarousel\").on(\"click\", \".nav a\", function(){\n\t\t\tclickEvent = true;\n\t\t\t$(this).parent().siblings().removeClass(\"active\");\n\t\t\t$(this).parent().addClass(\"active\");\t\t\n\t\t}).on(\"slid.bs.carousel\", function(e){\n\t\t\tif(!clickEvent){\n\t\t\t\titemIndex = $(e.relatedTarget).index();\n\t\t\t\ttargetNavItem = $(\".nav li[data-slide-to='\" + itemIndex + \"']\");\n\t\t\t\t$(\".nav li\").not(targetNavItem).removeClass(\"active\");\n\t\t\t\ttargetNavItem.addClass(\"active\");\n\t\t\t}\n\t\t\tclickEvent = false;\n\t\t});\n\t});\n</script>\n</section>",
+          "_cid": "SNPQv1Hz8T",
+          "_anchor": "design-block-SNPQv1Hz8T",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
@@ -793,31 +763,123 @@
         {
           "alias": false,
           "_styles": {
-            ".progress-container": {
-              "z-index": "20000",
+            "p": {
+              "color": "#ecf0f1",
+              "line-height": "28px",
+              "font-size": "15px",
+              "padding-top": "50px"
+            },
+            "DIV": {
+              "color": "#ffffff"
+            },
+            "H10": {
+              "color": "#767676"
+            },
+            ".hidden": {
+              "display": "none"
+            },
+            ".sidebar": {
+              "z-index": "1001",
+              "background-color": "@bgcolormenu",
+              "opacity": "@Opacitybarmenu",
               "position": "fixed",
-              "width": "100%",
-              "height": "(@LineHeight * 1px)",
-              "background": "@BckColor",
-              "top": "(@TopLine * 1px)"
+              "transition": "width 0.2s ease"
             },
-            ".progress-bar": {
-              "height": "(@LineHeight * 1px)",
-              "background": "@Linecolor",
-              "width": "0%"
+            ".sidebar nav": {
+              "height": "100%"
             },
-            "& when (@Stickyzen2 = false)": {
-              ".sticky2": {
-                "position": "fixed",
-                "top": "0",
+            ".sidebar .sidebar__nav": {
+              "display": "flex",
+              "height": "100%",
+              "list-style": "none",
+              "margin-top": "(@paddingTopmenu * 1px)",
+              "margin-right": "0px",
+              "margin-bottom": "0px",
+              "margin-left": "0px",
+              "padding": "0"
+            },
+            ".sidebar .sidebar__nav .sidebar__nav__link": {
+              "align-items": "center",
+              "color": "@bgcolormenu2",
+              "display": "flex",
+              "padding-left": "20px",
+              "text-decoration": "none",
+              "transition": "color 0.2s ease, background-color 0.2s ease"
+            },
+            ".sidebar .sidebar__nav .sidebar__nav__link:hover": {
+              "background-color": "@bgcolormenu1",
+              "color": "@bgcolormenu3"
+            },
+            ".sidebar .sidebar__nav .sidebar__nav__text": {
+              "display": "none",
+              "margin-left": "10px",
+              "margin-right": "auto",
+              "white-space": "nowrap"
+            },
+            ".sidebar .sidebar__nav i": {
+              "align-items": "center",
+              "display": "flex",
+              "justify-content": "center"
+            },
+            "@media (max-width: 572px)": {
+              ".sidebar": {
+                "bottom": "0",
                 "width": "100%"
+              },
+              ".sidebar .sidebar__nav": {
+                "justify-content": "center"
+              },
+              ".sidebar .sidebar__nav .sidebar__nav__link": {
+                "height": "100%",
+                "padding": "0.75em"
+              },
+              ".sidebar .sidebar__nav i": {
+                "font-size": "2rem"
               }
+            },
+            "@media (min-width: 572px)": {
+              ".sidebar": {
+                "height": "100vh",
+                "left": "0",
+                "width": "var(--sidebar-width)"
+              },
+              ".sidebar:hover": {
+                "width": "(@widthsize * 1rem)",
+                "opacity": "@OpacitybarmenuHover"
+              },
+              ".sidebar .sidebar__nav": {
+                "flex-direction": "column"
+              },
+              "& when (@lastchild) and (@paddingTopmenu = 0)": {
+                ".sidebar .sidebar__nav li:last-child": {
+                  "margin-top": "auto"
+                }
+              },
+              ".sidebar .sidebar__nav .sidebar__nav__link": {
+                "padding": "1em"
+              },
+              ".sidebar:hover .sidebar__nav .sidebar__nav__text": {
+                "display": "inline"
+              },
+              ".sidebar .sidebar__nav i": {
+                "font-size": "2.5rem"
+              }
+            },
+            "@media (max-height: 434px)": {
+              ".sidebar": {
+                "overflow-y": "scroll"
+              }
+            },
+            ":root": {
+              "--sidebar-width": "4.5em"
             }
           },
           "_name": "design-block",
-          "_customHTML": "<section mbr-id=\"_anchor\" class=\"_customHTML\">\n \n  \n     <mbr-parameters>\n<hr><header>Scroll Indicator</header>\n        \n       <input type=\"color\" title=\"Background Color\" name=\"BckColor\" value=\"#ffffff\">\n        <input type=\"color\" title=\"Line Color\" name=\"Linecolor\" value=\"#000000\">\n       <input type=\"range\" title=\"Line Height\" name=\"LineHeight\" min=\"1\" max=\"15\" step=\"1\" value=\"9\">\n        <input type=\"range\" title=\"Top Position\" name=\"TopLine\" min=\"1\" max=\"300\" step=\"1\" value=\"1\">\n      <input type=\"checkbox\" title=\"Sticky\" name=\"Stickyzen2\" checked>\n    </mbr-parameters> \n \n  <div class=\"progress-container\" id=\"myHeader\">\n    <div class=\"progress-bar\" id=\"myBar\"></div>\n  </div>      \n  \n<script type=\"text/javascript\">\nwindow.onscroll = function() {myFunction()};\nvar header = document.getElementById(\"myHeader\");\n// Get the offset position of the navbar\nvar sticky = header.offsetTop;\nfunction myFunction() {\n  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;\n  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;\n  var scrolled = (winScroll / height) * 100;\n  document.getElementById(\"myBar\").style.width = scrolled + \"%\";\n  \n   if (window.pageYOffset > sticky) {\n    header.classList.add(\"sticky2\");\n  } else {\n    header.classList.remove(\"sticky2\");\n  }\n  \n  \n}\n \n        \n</script>\n\n <div mbr-class=\"{'hidden': isPublish}\" style=\"padding:1rem; background-color:#c1c1c1;\">\n   <div class=\"align-center\">\n              <h10> <br><br><br><br><br><br>Scroll Indicator - Progress bar<br><br>\n        Click the \"gear\" icon to change the layout of the social bar. This text will be removed on preview/publish.<br><br><br><br><br><br></h10>\n\t\t\t\t\n    </div></div>\n</section>",
-          "_cid": "S6JZvLv9pS",
-          "_anchor": "design-block-S6JZvLv9pS",
+          "_customHTML": "<section mbr-id=\"_anchor\" class=\"_customHTML\">\n \n  \n    <mbr-parameters>\n<hr><header>Menu Configuration</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTopmenu\" min=\"0\" max=\"200\" step=\"1\" value=\"0\">\n      <input type=\"range\" inline title=\"Width  Hover\" name=\"widthsize\" min=\"14\" max=\"50\" step=\"1\" value=\"14\">\n      <input type=\"checkbox\" title=\"Show Logo\" name=\"showLogo\" checked>\n      <input type=\"checkbox\" title=\"Brand Name\" name=\"showName\" checked>\n         <input type=\"range\" title=\"Logo Size\" inline name=\"logoSize\" min=\"2\" max=\"8\" step=\"0.1\" value=\"8\" condition=\"showLogo\">\n         <input type=\"range\" title=\"Icon Size\" inline name=\"iconSize\" min=\"30\" max=\"60\" step=\"1\" value=\"30\">      \n      <input type=\"range\" inline title=\"Items Count\" name=\"iconsCount\" min=\"1\" max=\"10\" step=\"1\" value=\"1\">  \n        <input type=\"color\" title=\"Bar Color\" name=\"bgcolormenu\" value=\"#000000\">\n             <input type=\"range\" title=\"Opacity\" inline name=\"Opacitybarmenu\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\"> \n                   <input type=\"range\" title=\"Opacity Hover\" inline name=\"OpacitybarmenuHover\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\">  \n        <input type=\"color\" title=\"Hover Color\" name=\"bgcolormenu1\" value=\"#cccccc\">\n        <input type=\"color\" title=\"Icon Color\" name=\"bgcolormenu2\" value=\"#ffffff\">\n        <input type=\"color\" title=\"Icon Hover Color\" name=\"bgcolormenu3\" value=\"#0f7699\">\n        <input type=\"range\" inline title=\"Items Count\" name=\"iconsCount\" min=\"1\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"checkbox\" title=\"Icon at Bottom\" name=\"lastchild\" condition=\"paddingTopmenu==0\">\n\n\n    </mbr-parameters> \n\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n\t<aside class=\"sidebar\">\n\t\t\t<nav>\n\t\t\t\t<ul class=\"sidebar__nav\">\n                         \n         \n \t\t\t\t\t<li mbr-if=\"showLogo\">\n\t\t\t\t\t\t<a href=\"http://www.google.be\" class=\"sidebar__nav__link\">\n\t\t\t\t         <span class=\"sidebar__nav__text\"> <img src=\"@PROJECT_PATH@/assets/images/271085593075211-128x118-1.png\" alt=\"Mobirise\" mbr-style=\"{'height': logoSize + 'rem'}\" title></span>\n                          </a>\n\t\t\t\t\t</li>\n                   \t<li mbr-if=\"showName\">\n\t\t\t\t\t\t<a href=\"http://www.google.be\" class=\"sidebar__nav__link\">\n                          <span class=\"sidebar__nav__text\" mbr-text>We Make Website<br> For Humans.</span>\n                          </a>\n\t\t\t\t\t</li>\n                  \t<li>\n\t\t\t\t\t\t<a href=\"index.html#header5-9\" class=\"sidebar__nav__link\">\n\t\t\t\t\t\t\t<i mbr-icon class=\"mbr-iconfont mbri-italic\" style=\"font-size: {{iconSize}}px;\"></i>\n                          \t<span class=\"sidebar__nav__text\" mbr-text>소개</span>\n                        </a>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li mbr-if=\"iconsCount > 1\">\n\t\t\t\t\t\t<a href=\"index.html#features4-b\" class=\"sidebar__nav__link\">\n\t\t\t\t\t\t\t<i mbr-icon class=\"mbr-iconfont mbri-cash\" style=\"font-size: {{iconSize}}px;\"></i>\n                          \t<span class=\"sidebar__nav__text\" mbr-text>비지니스</span>\n\t\t\t\t\t\t</a>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li mbr-if=\"iconsCount > 2\">\n\t\t\t\t\t\t<a href=\"#\" class=\"sidebar__nav__link\">\n\t\t\t\t\t\t\t<i mbr-icon class=\"mbr-iconfont mbri-android\" style=\"font-size: {{iconSize}}px;\"></i>\n                          \t<span class=\"sidebar__nav__text\" mbr-text>포트폴리오</span>\n\t\t\t\t\t\t</a>\n\t\t\t\t\t</li>\n                  \t<li mbr-if=\"iconsCount > 3\">\n\t\t\t\t\t\t<a href=\"#\" class=\"sidebar__nav__link\">\n\t\t\t\t\t\t\t<i mbr-icon class=\"mbr-iconfont mbri-cart-full\" style=\"font-size: {{iconSize}}px;\"></i>\n                          \t<span class=\"sidebar__nav__text\" mbr-text>블로그</span>\n\t\t\t\t\t\t</a>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li mbr-if=\"iconsCount > 4\">\n\t\t\t\t\t\t<a href=\"#\" class=\"sidebar__nav__link\">\n\t\t\t\t\t\t\t<i mbr-icon class=\"mbr-iconfont mbri-apple\" style=\"font-size: {{iconSize}}px;\"></i>\n                          \t<span class=\"sidebar__nav__text\" mbr-text>문의</span>\n\t\t\t\t\t\t</a>\n\t\t\t\t\t</li>\n                  \t<li mbr-if=\"iconsCount > 5\">\n\t\t\t\t\t\t<a href=\"#\" class=\"sidebar__nav__link\">\n\t\t\t\t\t\t\t<i mbr-icon class=\"mbr-iconfont mbri-sun\" style=\"font-size: {{iconSize}}px;\"></i>\n                          \t<span class=\"sidebar__nav__text\" mbr-text>Page 6</span>\n\t\t\t\t\t\t</a>\n\t\t\t\t\t</li>\n                  \t\t\t\t\t<li mbr-if=\"iconsCount > 6\">\n\t\t\t\t\t\t<a href=\"#\" class=\"sidebar__nav__link\">\n\t\t\t\t\t\t\t<i mbr-icon class=\"mbr-iconfont mbri-question\" style=\"font-size: {{iconSize}}px;\"></i>\n                          \t<span class=\"sidebar__nav__text\" mbr-text>Page 7</span>\n\t\t\t\t\t\t</a>\n\t\t\t\t\t</li>\n                  \t\t\t\t\t<li mbr-if=\"iconsCount > 7\">\n\t\t\t\t\t\t<a href=\"#\" class=\"sidebar__nav__link\">\n\t\t\t\t\t\t\t<i mbr-icon class=\"mbr-iconfont mbri-github\" style=\"font-size: {{iconSize}}px;\"></i>\n                          \t<span class=\"sidebar__nav__text\" mbr-text>Page 8</span>\n\t\t\t\t\t\t</a>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li mbr-if=\"iconsCount > 8\">\n\t\t\t\t\t\t<a href=\"#\" class=\"sidebar__nav__link\">\n\t\t\t\t\t\t\t<i mbr-icon class=\"mbr-iconfont mbri-setting3\" style=\"font-size: {{iconSize}}px;\"></i>\n                          \t<span class=\"sidebar__nav__text\" mbr-text>Page 9</span>\n\t\t\t\t\t\t</a>\n\t\t\t\t\t</li>\n                  \t\t\t\t\t<li mbr-if=\"iconsCount > 9\">\n\t\t\t\t\t\t<a href=\"#\" class=\"sidebar__nav__link\">\n\t\t\t\t\t\t\t<i mbr-icon class=\"mbr-iconfont mbri-rocket\" style=\"font-size: {{iconSize}}px;\"></i>\n                          \t<span class=\"sidebar__nav__text\" mbr-text>Page 10</span>\n\t\t\t\t\t\t</a>\n\t\t\t\t\t</li>\n\n\t\t\t\t</ul>\n\t\t\t</nav>\n\t\t</aside>\n\n <div mbr-class=\"{'hidden': isPublish}\" style=\"padding:1rem; background-color:#c1c1c1;\">\n   <div class=\"align-center\">\n              <h10> <br><br><br><br><br><br>Simply Left Menu<br><br>\n        Click the \"gear\" icon to change the layout of the Simply Left Menu bar. This text will be removed on preview/publish.<br><br><br><br><br><br></h10>\n\t\t\t\t\n    </div></div>\n</section>",
+          "_cid": "z3k3mM84IT",
+          "_anchor": "design-block-z3k3mM84IT",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [],
           "_protectedParams": [],
           "_global": false,
           "_once": false,
@@ -6555,6 +6617,39 @@
           "_customHTML": "<section class=\"header1\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"3\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked>\n        <input type=\"color\" title=\"Wave Color\" name=\"waveColor\" value=\"#ffffff\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"https://i.imgur.com/FLszoiX.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#7f1933\">\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"row justify-content-md-center\">\n            <div class=\"mbr-white col-md-10\">\n                <h1 class=\"mbr-section-title align-center mbr-bold pb-3 mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">Header Block with Wave</h1>\n                <h3 class=\"mbr-section-subtitle align-center mbr-light pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showSubTitle\">\n                    Beautiful mobile websites\n                </h3>\n                <p class=\"mbr-text align-center pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                    customize the color of the wave</p>\n                <div class=\"mbr-section-btn align-center\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\"><a class=\"btn btn-md btn-black\" href=\"https://mobirise.co\" data-app-placeholder=\"Type Text\">\n                        LEARN MORE</a></div>\n            </div>\n        </div>\n    </div>\n\n  <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1428.75 62.05\">\n    <path class=\"wave\" d=\"M-114,132s185,44,434,18c0,0,304-41,551,0,0,0,290.5,57.25,443.75.13v43.69H-114Z\" transform=\"translate(114 -131.78)\"></path>\n  </svg>\n  \n</section>",
           "_cid": "EgScUs0mLu",
           "_anchor": "design-block-EgScUs0mLu",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            ".progress-container": {
+              "z-index": "20000",
+              "position": "fixed",
+              "width": "100%",
+              "height": "(@LineHeight * 1px)",
+              "background": "@BckColor",
+              "top": "(@TopLine * 1px)"
+            },
+            ".progress-bar": {
+              "height": "(@LineHeight * 1px)",
+              "background": "@Linecolor",
+              "width": "0%"
+            },
+            "& when (@Stickyzen2 = false)": {
+              ".sticky2": {
+                "position": "fixed",
+                "top": "0",
+                "width": "100%"
+              }
+            }
+          },
+          "_name": "design-block",
+          "_customHTML": "<section mbr-id=\"_anchor\" class=\"_customHTML\">\n \n  \n     <mbr-parameters>\n<hr><header>Scroll Indicator</header>\n        \n       <input type=\"color\" title=\"Background Color\" name=\"BckColor\" value=\"#ffffff\">\n        <input type=\"color\" title=\"Line Color\" name=\"Linecolor\" value=\"#000000\">\n       <input type=\"range\" title=\"Line Height\" name=\"LineHeight\" min=\"1\" max=\"15\" step=\"1\" value=\"9\">\n        <input type=\"range\" title=\"Top Position\" name=\"TopLine\" min=\"1\" max=\"300\" step=\"1\" value=\"1\">\n      <input type=\"checkbox\" title=\"Sticky\" name=\"Stickyzen2\" checked>\n    </mbr-parameters> \n \n  <div class=\"progress-container\" id=\"myHeader\">\n    <div class=\"progress-bar\" id=\"myBar\"></div>\n  </div>      \n  \n<script type=\"text/javascript\">\nwindow.onscroll = function() {myFunction()};\nvar header = document.getElementById(\"myHeader\");\n// Get the offset position of the navbar\nvar sticky = header.offsetTop;\nfunction myFunction() {\n  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;\n  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;\n  var scrolled = (winScroll / height) * 100;\n  document.getElementById(\"myBar\").style.width = scrolled + \"%\";\n  \n   if (window.pageYOffset > sticky) {\n    header.classList.add(\"sticky2\");\n  } else {\n    header.classList.remove(\"sticky2\");\n  }\n  \n  \n}\n \n        \n</script>\n\n <div mbr-class=\"{'hidden': isPublish}\" style=\"padding:1rem; background-color:#c1c1c1;\">\n   <div class=\"align-center\">\n              <h10> <br><br><br><br><br><br>Scroll Indicator - Progress bar<br><br>\n        Click the \"gear\" icon to change the layout of the social bar. This text will be removed on preview/publish.<br><br><br><br><br><br></h10>\n\t\t\t\t\n    </div></div>\n</section>",
+          "_cid": "S6JZvLv9pS",
+          "_anchor": "design-block-S6JZvLv9pS",
           "_protectedParams": [],
           "_global": false,
           "_once": false,

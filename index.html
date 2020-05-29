@@ -95,72 +95,81 @@
     </nav>
 </section>
 
-<section class="_customHTML cid-z3k3mM84IT" id="design-block-z3k3mM84IT" data-sortbtn="btn-primary">
- 
-  
+<section class="mbr-section header slider_with_text_button cid-SNPQv1Hz8T" id="design-block-SNPQv1Hz8T" data-sortbtn="btn-primary">
+
      
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<aside class="sidebar">
-			<nav>
-				<ul class="sidebar__nav">
-                         
-         
- 					<li>
-						<a href="http://www.google.be" class="sidebar__nav__link">
-				         <span class="sidebar__nav__text"> <img src="assets/images/271085593075211-128x118-1.png" alt="" title="" style="height: 8rem;"></span>
-                          </a>
-					</li>
-                   	<li>
-						<a href="http://www.google.be" class="sidebar__nav__link">
-                          <span class="sidebar__nav__text">We Make Website<br> For Humans.</span>
-                          </a>
-					</li>
-                  	<li>
-						<a href="index.html#header5-9" class="sidebar__nav__link">
-							<i class="mbr-iconfont mbri-italic" media-simple="true" style="font-size: 30px;"></i>
-                          	<span class="sidebar__nav__text">소개</span>
-                        </a>
-					</li>
-					<li>
-						<a href="index.html#features4-b" class="sidebar__nav__link">
-							<i class="mbr-iconfont mbri-cash" media-simple="true" style="font-size: 30px;"></i>
-                          	<span class="sidebar__nav__text">비지니스</span>
-						</a>
-					</li>
-					<li>
-						<a href="#" class="sidebar__nav__link">
-							<i class="mbr-iconfont mbri-android" media-simple="true" style="font-size: 30px;"></i>
-                          	<span class="sidebar__nav__text">포트폴리오</span>
-						</a>
-					</li>
-                  	<li>
-						<a href="#" class="sidebar__nav__link">
-							<i class="mbr-iconfont mbri-cart-full" media-simple="true" style="font-size: 30px;"></i>
-                          	<span class="sidebar__nav__text">블로그</span>
-						</a>
-					</li>
-					<li>
-						<a href="#" class="sidebar__nav__link">
-							<i class="mbr-iconfont mbri-apple" media-simple="true" style="font-size: 30px;"></i>
-                          	<span class="sidebar__nav__text">문의</span>
-						</a>
-					</li>
-                  	
-                  					
-                  					
-					
-                  					
-
+<div class="fullwidth">
+	<div class="row">
+		<div class="col-md-12">
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+				<!-- Wrapper for carousel items -->
+				<div class="carousel-inner">
+					<div class="item carousel-item active">
+						<img src="assets/images/39.jpg" alt="" title="">
+						<div class="carousel-caption">
+							<h3>Amazing Digital Experience</h3>
+							<p>Pulvinar leo id risus pellentesque vestibulum. Sed diam libero, sodales eget sapien bibendum.</p>
+						</div>
+					</div>	
+					<div class="item carousel-item">
+						<img src="https://cdn.pixabay.com/photo/2020/05/26/09/01/night-5222267__340.jpg" alt="">
+						<div class="carousel-caption">
+							<h3>Live Monitoring Tools</h3>							
+							<p>Nullam hendrerit justo non leo aliquet imperdiet. Etiam sagittis lectus condime dapibus vitae.</p>
+						</div>
+					</div>
+					<div class="item carousel-item">
+						<img src="assets/images/man.jpg" alt="" title="">
+						<div class="carousel-caption">
+							<h3>Attractive Pricing</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pellentesque tempor quis.</p>
+						</div>
+					</div>
+					<div class="item carousel-item">
+						<img src="https://cdn.pixabay.com/photo/2020/05/20/07/01/glencoe-5195121__340.jpg" alt="">
+						<div class="carousel-caption">
+							<h3>Award Winning Support</h3>
+							<p>Nullam hendrerit justo non leo aliquet imperdiet. Etiam in sagittis lectus ultrices placerat.</p>
+						</div>
+					</div>
+				</div>
+				<!-- End Carousel Inner -->
+				<ul class="nav nav-pills nav-justified">
+					<li data-target="#myCarousel" data-slide-to="0" class="nav-item"><a href="#" class="nav-link"><strong>About</strong>Lorem ipsum dolor sit amet</a></li>
+					<li data-target="#myCarousel" data-slide-to="1" class="nav-item active"><a href="#" class="nav-link"><strong>Features</strong> Nesciunt stumpown odio aliqua</a></li>
+					<li data-target="#myCarousel" data-slide-to="2" class="nav-item"><a href="#" class="nav-link"><strong>Pricing</strong> Oullam hendrerit justom leow</a></li>
+					<li data-target="#myCarousel" data-slide-to="3" class="nav-item"><a href="#" class="nav-link"><strong>Support</strong> Proin suscipit non adipiscing</a></li>
 				</ul>
-			</nav>
-		</aside>
-
- <div style="padding:1rem; background-color:#c1c1c1;" class="hidden">
-   <div class="align-center">
-              <h10> <br><br><br><br><br><br>Simply Left Menu<br><br>
-        Click the "gear" icon to change the layout of the Simply Left Menu bar. This text will be removed on preview/publish.<br><br><br><br><br><br></h10>
-				
-    </div></div>
+              <!-- Carousel controls -->
+				<a class="carousel-control left carousel-control-prev" href="#myCarousel" data-slide="prev">
+					<i class="fa fa-angle-left"></i>
+				</a>
+				<a class="carousel-control right carousel-control-next" href="#myCarousel" data-slide="next">
+					<i class="fa fa-angle-right"></i>
+				</a>
+			</div>
+		</div>
+	</div>
+  </div>
+  <script type="text/javascript">
+	$(document).ready(function(){
+		// Highlight bottom nav links
+		var clickEvent = false;
+		$("#myCarousel").on("click", ".nav a", function(){
+			clickEvent = true;
+			$(this).parent().siblings().removeClass("active");
+			$(this).parent().addClass("active");		
+		}).on("slid.bs.carousel", function(e){
+			if(!clickEvent){
+				itemIndex = $(e.relatedTarget).index();
+				targetNavItem = $(".nav li[data-slide-to='" + itemIndex + "']");
+				$(".nav li").not(targetNavItem).removeClass("active");
+				targetNavItem.addClass("active");
+			}
+			clickEvent = false;
+		});
+	});
+</script>
 </section>
 
 <section class="cid-rS5Fd6uKc1 mbr-fullscreen" id="header2-6" data-sortbtn="btn-primary">
@@ -243,42 +252,70 @@
 
 </section>
 
-<section class="_customHTML cid-S6JZvLv9pS" id="design-block-S6JZvLv9pS" data-sortbtn="btn-primary">
+<section class="_customHTML cid-z3k3mM84IT" id="design-block-z3k3mM84IT" data-sortbtn="btn-primary">
  
   
-      
- 
-  <div class="progress-container" id="myHeader">
-    <div class="progress-bar" id="myBar"></div>
-  </div>      
-  
-<script type="text/javascript">
-window.onscroll = function() {myFunction()};
-var header = document.getElementById("myHeader");
-// Get the offset position of the navbar
-var sticky = header.offsetTop;
-function myFunction() {
-  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  var scrolled = (winScroll / height) * 100;
-  document.getElementById("myBar").style.width = scrolled + "%";
-  
-   if (window.pageYOffset > sticky) {
-    header.classList.add("sticky2");
-  } else {
-    header.classList.remove("sticky2");
-  }
-  
-  
-}
- 
-        
-</script>
+     
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<aside class="sidebar">
+			<nav>
+				<ul class="sidebar__nav">
+                         
+         
+ 					<li>
+						<a href="http://www.google.be" class="sidebar__nav__link">
+				         <span class="sidebar__nav__text"> <img src="assets/images/271085593075211-128x118-1.png" alt="" title="" style="height: 8rem;"></span>
+                          </a>
+					</li>
+                   	<li>
+						<a href="http://www.google.be" class="sidebar__nav__link">
+                          <span class="sidebar__nav__text">We Make Website<br> For Humans.</span>
+                          </a>
+					</li>
+                  	<li>
+						<a href="index.html#header5-9" class="sidebar__nav__link">
+							<i class="mbr-iconfont mbri-italic" media-simple="true" style="font-size: 30px;"></i>
+                          	<span class="sidebar__nav__text">소개</span>
+                        </a>
+					</li>
+					<li>
+						<a href="index.html#features4-b" class="sidebar__nav__link">
+							<i class="mbr-iconfont mbri-cash" media-simple="true" style="font-size: 30px;"></i>
+                          	<span class="sidebar__nav__text">비지니스</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="sidebar__nav__link">
+							<i class="mbr-iconfont mbri-android" media-simple="true" style="font-size: 30px;"></i>
+                          	<span class="sidebar__nav__text">포트폴리오</span>
+						</a>
+					</li>
+                  	<li>
+						<a href="#" class="sidebar__nav__link">
+							<i class="mbr-iconfont mbri-cart-full" media-simple="true" style="font-size: 30px;"></i>
+                          	<span class="sidebar__nav__text">블로그</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="sidebar__nav__link">
+							<i class="mbr-iconfont mbri-apple" media-simple="true" style="font-size: 30px;"></i>
+                          	<span class="sidebar__nav__text">문의</span>
+						</a>
+					</li>
+                  	
+                  					
+                  					
+					
+                  					
+
+				</ul>
+			</nav>
+		</aside>
 
  <div style="padding:1rem; background-color:#c1c1c1;" class="hidden">
    <div class="align-center">
-              <h10> <br><br><br><br><br><br>Scroll Indicator - Progress bar<br><br>
-        Click the "gear" icon to change the layout of the social bar. This text will be removed on preview/publish.<br><br><br><br><br><br></h10>
+              <h10> <br><br><br><br><br><br>Simply Left Menu<br><br>
+        Click the "gear" icon to change the layout of the Simply Left Menu bar. This text will be removed on preview/publish.<br><br><br><br><br><br></h10>
 				
     </div></div>
 </section>
@@ -2094,7 +2131,7 @@ function myFunction() {
     </div>
 </section>
 
-<section class="mbr-section" id="witsec-modal-window-block-j" data-rv-view="134" data-sortbtn="btn-primary">
+<section class="mbr-section" id="witsec-modal-window-block-j" data-rv-view="367" data-sortbtn="btn-primary">
 
 	<style>
 	/* Let's not animate the contents of modal windows */
@@ -2420,7 +2457,7 @@ function myFunction() {
                     1px.</h2>
                 <div class="media-container-column" data-form-type="formoid">
                     <!---Formbuilder Form--->
-                    <form action="https://mobirise.com/" method="POST" class="mbr-form form-with-styler" data-form-title="Mobirise Form"><input type="hidden" name="email" data-form-email="true" value="PHxVhEwgqFpQuTjPAP9IuiMMjo+ktHHQ1aG9p2MmEbK6D9at5Lat+5Pl7k4rAooh7B36emrotGqRbvikwXbdY+pnu9ZZXCKuZB+9F0E8XevFfhfFiibI/UubmEaX4jxw">
+                    <form action="https://mobirise.com/" method="POST" class="mbr-form form-with-styler" data-form-title="Mobirise Form"><input type="hidden" name="email" data-form-email="true" value="0JW1s/tf34299atL+BGEOXBfr7nKbmKLP5u+UMyWphAzsmH1x/fYoVq6fftoDcPcgFfy+HNCfU+t7DptGN6oJcSkBqjJGth29pg74QhO7kwtHKxchBff3wsc05aJQfw=">
                         <div class="row">
                             <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Thanks for filling out the form!</div>
                             <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">
@@ -3146,7 +3183,7 @@ function myFunction() {
                 </h3>
                 <div class="form-wrap" data-form-type="formoid">
                     <!---Formbuilder Form--->
-                    <form action="https://mobirise.com/" method="POST" class="mbr-form form-with-styler" data-form-title="My Mobirise Form"><input type="hidden" name="email" data-form-email="true" value="bZ7GUI/rR6mHu7+BhGzqJuVNCaA1SrT5436Gk5Wnln0ZAXa1DDngIV0mUn84Y9OfX13/On0X4/iljNOh0O6Nk6knRWBv0X5c7IHhADog6ikjPn41jQyVU9wRQceec5Kd">
+                    <form action="https://mobirise.com/" method="POST" class="mbr-form form-with-styler" data-form-title="My Mobirise Form"><input type="hidden" name="email" data-form-email="true" value="1ZYR8xb1rD3IqlCzxhwdTdyODvusuZX3tuued/hxBLnncLtNqotDYPol5Q7qJPP5HNyI9HAtkRJXh2R1w2M8XIDWro8C9dFEV7gHSUjaMfTLMuUis6oSxkS2HCa8/Tm4">
                         <div class="row">
                             <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Thanks for filling out the form!</div>
                             <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">
@@ -3204,7 +3241,7 @@ function myFunction() {
       
       <!-- Password-recovery Form -->
         <div class="col-md-7 col-lg-6 ml-auto" data-form-type="formoid">
-            <form action="https://mobirise.com/" method="POST" class="mbr-form" data-form-title="Mobirise Form"><input type="hidden" name="email" data-form-email="true" value="JIdM9rbsFeWI2+m0J9zNhPfU8v//nAsWW8tMkdTWjDj9DdbyJzk3yDlTK7WEW4TAg1R8/T53x/Hj1oBCUo4PL6bqhfz/2VoDtOHUYZq+z/2fq5StJmYfgzMLw7UB21ag">
+            <form action="https://mobirise.com/" method="POST" class="mbr-form" data-form-title="Mobirise Form"><input type="hidden" name="email" data-form-email="true" value="WbViusx6HTFsGka6uc/MNSmvEBA16P0sIcLoePGQHwrtDhhM2CE45wFdVmzLmHjR2EVIyj/v1jrIiuwaGW9dNaRXOxzXRFFiz9QnSFy+5zdCJx80JFyyQidvNYKnQM+V">
               <div class="row">
                         <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Thanks for submitting!</div>
                         <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">
@@ -3396,6 +3433,46 @@ function myFunction() {
     <path class="wave" d="M-114,132s185,44,434,18c0,0,304-41,551,0,0,0,290.5,57.25,443.75.13v43.69H-114Z" transform="translate(114 -131.78)"></path>
   </svg>
   
+</section>
+
+<section class="_customHTML cid-S6JZvLv9pS" id="design-block-S6JZvLv9pS" data-sortbtn="btn-primary">
+ 
+  
+      
+ 
+  <div class="progress-container" id="myHeader">
+    <div class="progress-bar" id="myBar"></div>
+  </div>      
+  
+<script type="text/javascript">
+window.onscroll = function() {myFunction()};
+var header = document.getElementById("myHeader");
+// Get the offset position of the navbar
+var sticky = header.offsetTop;
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+  
+   if (window.pageYOffset > sticky) {
+    header.classList.add("sticky2");
+  } else {
+    header.classList.remove("sticky2");
+  }
+  
+  
+}
+ 
+        
+</script>
+
+ <div style="padding:1rem; background-color:#c1c1c1;" class="hidden">
+   <div class="align-center">
+              <h10> <br><br><br><br><br><br>Scroll Indicator - Progress bar<br><br>
+        Click the "gear" icon to change the layout of the social bar. This text will be removed on preview/publish.<br><br><br><br><br><br></h10>
+				
+    </div></div>
 </section>
 
 
