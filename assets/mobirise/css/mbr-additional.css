@@ -828,9 +828,6 @@ hr {
   .cid-z3k3mM84IT .sidebar .sidebar__nav {
     flex-direction: column;
   }
-  .cid-z3k3mM84IT .sidebar .sidebar__nav li:last-child {
-    margin-top: auto;
-  }
   .cid-z3k3mM84IT .sidebar .sidebar__nav .sidebar__nav__link {
     padding: 1em;
   }
