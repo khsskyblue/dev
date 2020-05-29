@@ -89,6 +89,39 @@
         {
           "alias": false,
           "_styles": {
+            ".progress-container": {
+              "z-index": "20000",
+              "position": "fixed",
+              "width": "100%",
+              "height": "(@LineHeight * 1px)",
+              "background": "@BckColor",
+              "top": "(@TopLine * 1px)"
+            },
+            ".progress-bar": {
+              "height": "(@LineHeight * 1px)",
+              "background": "@Linecolor",
+              "width": "0%"
+            },
+            "& when (@Stickyzen2 = false)": {
+              ".sticky2": {
+                "position": "fixed",
+                "top": "0",
+                "width": "100%"
+              }
+            }
+          },
+          "_name": "design-block",
+          "_customHTML": "<section mbr-id=\"_anchor\" class=\"_customHTML\">\n \n  \n     <mbr-parameters>\n<hr><header>Scroll Indicator</header>\n        \n       <input type=\"color\" title=\"Background Color\" name=\"BckColor\" value=\"#ffffff\">\n        <input type=\"color\" title=\"Line Color\" name=\"Linecolor\" value=\"#000000\">\n       <input type=\"range\" title=\"Line Height\" name=\"LineHeight\" min=\"1\" max=\"15\" step=\"1\" value=\"9\">\n        <input type=\"range\" title=\"Top Position\" name=\"TopLine\" min=\"1\" max=\"300\" step=\"1\" value=\"1\">\n      <input type=\"checkbox\" title=\"Sticky\" name=\"Stickyzen2\" checked>\n    </mbr-parameters> \n \n  <div class=\"progress-container\" id=\"myHeader\">\n    <div class=\"progress-bar\" id=\"myBar\"></div>\n  </div>      \n  \n<script type=\"text/javascript\">\nwindow.onscroll = function() {myFunction()};\nvar header = document.getElementById(\"myHeader\");\n// Get the offset position of the navbar\nvar sticky = header.offsetTop;\nfunction myFunction() {\n  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;\n  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;\n  var scrolled = (winScroll / height) * 100;\n  document.getElementById(\"myBar\").style.width = scrolled + \"%\";\n  \n   if (window.pageYOffset > sticky) {\n    header.classList.add(\"sticky2\");\n  } else {\n    header.classList.remove(\"sticky2\");\n  }\n  \n  \n}\n \n        \n</script>\n\n <div mbr-class=\"{'hidden': isPublish}\" style=\"padding:1rem; background-color:#c1c1c1;\">\n   <div class=\"align-center\">\n              <h10> <br><br><br><br><br><br>Scroll Indicator - Progress bar<br><br>\n        Click the \"gear\" icon to change the layout of the social bar. This text will be removed on preview/publish.<br><br><br><br><br><br></h10>\n\t\t\t\t\n    </div></div>\n</section>",
+          "_cid": "S6JZvLv9pS",
+          "_anchor": "design-block-S6JZvLv9pS",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
             ".dropdown-item:before": {
               "font-family": "MobiriseIcons !important",
               "content": "'\\e966'",
@@ -6235,39 +6268,6 @@
           "_customHTML": "<section mbr-id=\"_header_with_slider_image_and_text\" class=\"mbr-section header_with_slider_image_and_text\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#232323\">\n      <input type=\"color\" title=\"Card Bg Color\" name=\"cardbgColor\" value=\"#232323\">\n      <input type=\"checkbox\" title=\"Show Button\" name=\"showbtn\" checked>\n      <select title=\"Content Width\" name=\"widthContent\">\n            <option value=\"1\" selected>Full Width</option>\n            <option value=\"2\">None Full Width</option>\n        </select>\n      <select title=\"Slider Count\" name=\"imgslidercount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\" selected>3</option>\n        </select>\n      <input type=\"checkbox\" title=\"Change Direction\" name=\"reverseContent\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n<div mbr-class=\"{ 'fullwidth': widthContent == 1, 'container': widthContent == 2}\">\n     <div class=\"text-figure-box\" mbr-class=\"{'col-md-12': widthContent == 1, 'col-md-12': widthContent == 2}\">\n        <div class=\"row venue animate-in-down\">\n            <div class=\"p-4 col-md-6 align-self-center text-color order-md-1 order-2\">\n                <p class=\"m-0\">For encouragment, and motivation</p>\n                <h2>Why not buy me a Coffee</h2>\n                <p class=\"my-4\">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.<br> Contact me on WhatsApp via +2349066849761 for you costum block or other server side code block</p> <a href=\"#\" class=\"btn mb-3 p-2 btn-light\" mbr-text mbr-if=\"showbtn\">View the gallery</a>\n            </div>\n            <div class=\"p-0 col-md-6 order-md-2 order-1\">\n                <div class=\"carousel slide\" data-ride=\"carousel\" id=\"carousel1\">\n                    <div class=\"carousel-inner\" role=\"listbox\">\n                        <div class=\"carousel-item active\" mbr-if=\"imgslidercount > 0\"> <img class=\"d-block img-fluid w-100\" src=\"https://res.cloudinary.com/dxfq3iotg/image/upload/v1566824776/work1.png\" alt=\"first slide\">\n                            <div class=\"carousel-caption\">\n                                <h3>Simura Hotels</h3>\n                                <p>Good architecture, services</p>\n                            </div>\n                        </div>\n                        <div class=\"carousel-item\" mbr-if=\"imgslidercount > 1\"> <img class=\"d-block img-fluid w-100\" src=\"https://res.cloudinary.com/dxfq3iotg/image/upload/v1566824919/work1_1.png\" data-holder-rendered=\"true\">\n                            <div class=\"carousel-caption\">\n                                <h3>Hauzkhas Village Bar</h3>\n                                <p>Enjoy our long drink</p>\n                            </div>\n                        </div>\n                        <div class=\"carousel-item\" mbr-if=\"imgslidercount > 2\"> <img class=\"d-block img-fluid w-100\" src=\"https://res.cloudinary.com/dxfq3iotg/image/upload/v1566825017/work1_2.png\" data-holder-rendered=\"true\">\n                            <div class=\"carousel-caption\">\n                                <h3>Cooking Hemorto</h3>\n                                <p>Tastes it better</p>\n                            </div>\n                        </div>\n                    </div> <a class=\"carousel-control-prev\" href=\"#carousel1\" role=\"button\" data-slide=\"prev\" mbr-if=\"imgslidercount > 1\"> <span class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span> <span class=\"sr-only\">Previous</span> </a> <a class=\"carousel-control-next\" href=\"#carousel1\" role=\"button\" data-slide=\"next\" mbr-if=\"imgslidercount > 1\"> <span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span> <span class=\"sr-only\">Next</span> </a>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n</section>",
           "_cid": "3bPlUZxfu6",
           "_anchor": "design-block-3bPlUZxfu6",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
-            ".progress-container": {
-              "z-index": "20000",
-              "position": "fixed",
-              "width": "100%",
-              "height": "(@LineHeight * 1px)",
-              "background": "@BckColor",
-              "top": "(@TopLine * 1px)"
-            },
-            ".progress-bar": {
-              "height": "(@LineHeight * 1px)",
-              "background": "@Linecolor",
-              "width": "0%"
-            },
-            "& when (@Stickyzen2 = false)": {
-              ".sticky2": {
-                "position": "fixed",
-                "top": "0",
-                "width": "100%"
-              }
-            }
-          },
-          "_name": "design-block",
-          "_customHTML": "<section mbr-id=\"_anchor\" class=\"_customHTML\">\n \n  \n     <mbr-parameters>\n<hr><header>Scroll Indicator</header>\n        \n       <input type=\"color\" title=\"Background Color\" name=\"BckColor\" value=\"#ffffff\">\n        <input type=\"color\" title=\"Line Color\" name=\"Linecolor\" value=\"#000000\">\n       <input type=\"range\" title=\"Line Height\" name=\"LineHeight\" min=\"1\" max=\"15\" step=\"1\" value=\"9\">\n        <input type=\"range\" title=\"Top Position\" name=\"TopLine\" min=\"1\" max=\"300\" step=\"1\" value=\"1\">\n      <input type=\"checkbox\" title=\"Sticky\" name=\"Stickyzen2\" checked>\n    </mbr-parameters> \n \n  <div class=\"progress-container\" id=\"myHeader\">\n    <div class=\"progress-bar\" id=\"myBar\"></div>\n  </div>      \n  \n<script type=\"text/javascript\">\nwindow.onscroll = function() {myFunction()};\nvar header = document.getElementById(\"myHeader\");\n// Get the offset position of the navbar\nvar sticky = header.offsetTop;\nfunction myFunction() {\n  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;\n  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;\n  var scrolled = (winScroll / height) * 100;\n  document.getElementById(\"myBar\").style.width = scrolled + \"%\";\n  \n   if (window.pageYOffset > sticky) {\n    header.classList.add(\"sticky2\");\n  } else {\n    header.classList.remove(\"sticky2\");\n  }\n  \n  \n}\n \n        \n</script>\n\n <div mbr-class=\"{'hidden': isPublish}\" style=\"padding:1rem; background-color:#c1c1c1;\">\n   <div class=\"align-center\">\n              <h10> <br><br><br><br><br><br>Scroll Indicator - Progress bar<br><br>\n        Click the \"gear\" icon to change the layout of the social bar. This text will be removed on preview/publish.<br><br><br><br><br><br></h10>\n\t\t\t\t\n    </div></div>\n</section>",
-          "_cid": "S6JZvLv9pS",
-          "_anchor": "design-block-S6JZvLv9pS",
           "_protectedParams": [],
           "_global": false,
           "_once": false,

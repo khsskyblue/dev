@@ -741,6 +741,19 @@ hr {
 .btn-danger-outline:hover::before {
   background-color: #000000 !important;
 }
+.cid-S6JZvLv9pS .progress-container {
+  z-index: 20000;
+  position: fixed;
+  width: 100%;
+  height: 9px;
+  background: #ffffff;
+  top: 1px;
+}
+.cid-S6JZvLv9pS .progress-bar {
+  height: 9px;
+  background: #000000;
+  width: 0%;
+}
 .cid-rR8bs0uTgv .dropdown-item:before {
   font-family: MobiriseIcons !important;
   content: '\e966';
@@ -5454,19 +5467,6 @@ hr {
 }
 .cid-3bPlUZxfu6 .venue {
   background-color: #232323;
-}
-.cid-S6JZvLv9pS .progress-container {
-  z-index: 20000;
-  position: fixed;
-  width: 100%;
-  height: 9px;
-  background: #ffffff;
-  top: 1px;
-}
-.cid-S6JZvLv9pS .progress-bar {
-  height: 9px;
-  background: #000000;
-  width: 0%;
 }
 .cid-rZYRAE2txZ {
   background-image: url("../../../assets/images/s-453d5cbff17c1f5988857f3e3714ef237a045136.gif");
