@@ -770,7 +770,7 @@ hr {
   display: flex;
   height: 100%;
   list-style: none;
-  margin-top: 0px;
+  margin-top: 200px;
   margin-right: 0px;
   margin-bottom: 0px;
   margin-left: 0px;
@@ -827,9 +827,6 @@ hr {
   }
   .cid-z3k3mM84IT .sidebar .sidebar__nav {
     flex-direction: column;
-  }
-  .cid-z3k3mM84IT .sidebar .sidebar__nav li:last-child {
-    margin-top: auto;
   }
   .cid-z3k3mM84IT .sidebar .sidebar__nav .sidebar__nav__link {
     padding: 1em;
@@ -2050,7 +2047,7 @@ hr {
   }
 }
 .cid-rS5wC37ZMk .box {
-  background-image: url("../../../assets/images/office-311.jpg");
+  background-image: url("../../../assets/images/office-317.jpg");
   background-size: cover;
   background-position: center;
   height: 380px;
