@@ -54,7 +54,7 @@
       }
     ],
     "imageResize": true,
-    "uniqCompNum": 129,
+    "uniqCompNum": 125,
     "versionPublish": "5.0.5",
     "favicon": false,
     "robotsSwitcher": false,
@@ -86,6 +86,170 @@
         "html_before": ""
       },
       "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "p": {
+              "color": "#ecf0f1",
+              "line-height": "28px",
+              "font-size": "15px",
+              "padding-top": "50px"
+            },
+            "DIV": {
+              "color": "#ffffff"
+            },
+            "H10": {
+              "color": "#767676"
+            },
+            ".hidden": {
+              "display": "none"
+            },
+            ".sidebar": {
+              "z-index": "1001",
+              "background-color": "@bgcolormenu",
+              "opacity": "@Opacitybarmenu",
+              "position": "fixed",
+              "transition": "width 0.2s ease"
+            },
+            ".sidebar nav": {
+              "height": "100%"
+            },
+            ".sidebar .sidebar__nav": {
+              "display": "flex",
+              "height": "100%",
+              "list-style": "none",
+              "margin-top": "(@paddingTopmenu * 1px)",
+              "margin-right": "0px",
+              "margin-bottom": "0px",
+              "margin-left": "0px",
+              "padding": "0"
+            },
+            ".sidebar .sidebar__nav .sidebar__nav__link": {
+              "align-items": "center",
+              "color": "@bgcolormenu2",
+              "display": "flex",
+              "padding-left": "20px",
+              "text-decoration": "none",
+              "transition": "color 0.2s ease, background-color 0.2s ease"
+            },
+            ".sidebar .sidebar__nav .sidebar__nav__link:hover": {
+              "background-color": "@bgcolormenu1",
+              "color": "@bgcolormenu3"
+            },
+            ".sidebar .sidebar__nav .sidebar__nav__text": {
+              "display": "none",
+              "margin-left": "10px",
+              "margin-right": "auto",
+              "white-space": "nowrap"
+            },
+            ".sidebar .sidebar__nav i": {
+              "align-items": "center",
+              "display": "flex",
+              "justify-content": "center"
+            },
+            "@media (max-width: 572px)": {
+              ".sidebar": {
+                "bottom": "0",
+                "width": "100%"
+              },
+              ".sidebar .sidebar__nav": {
+                "justify-content": "center"
+              },
+              ".sidebar .sidebar__nav .sidebar__nav__link": {
+                "height": "100%",
+                "padding": "0.75em"
+              },
+              ".sidebar .sidebar__nav i": {
+                "font-size": "2rem"
+              }
+            },
+            "@media (min-width: 572px)": {
+              ".sidebar": {
+                "height": "100vh",
+                "left": "0",
+                "width": "var(--sidebar-width)"
+              },
+              ".sidebar:hover": {
+                "width": "(@widthsize * 1rem)",
+                "opacity": "@OpacitybarmenuHover"
+              },
+              ".sidebar .sidebar__nav": {
+                "flex-direction": "column"
+              },
+              "& when (@lastchild) and (@paddingTopmenu = 0)": {
+                ".sidebar .sidebar__nav li:last-child": {
+                  "margin-top": "auto"
+                }
+              },
+              ".sidebar .sidebar__nav .sidebar__nav__link": {
+                "padding": "1em"
+              },
+              ".sidebar:hover .sidebar__nav .sidebar__nav__text": {
+                "display": "inline"
+              },
+              ".sidebar .sidebar__nav i": {
+                "font-size": "2.5rem"
+              }
+            },
+            "@media (max-height: 434px)": {
+              ".sidebar": {
+                "overflow-y": "scroll"
+              }
+            },
+            ":root": {
+              "--sidebar-width": "4.5em"
+            }
+          },
+          "_name": "design-block",
+          "_customHTML": "<section mbr-id=\"_anchor\" class=\"_customHTML\">\n \n  \n    <mbr-parameters>\n<hr><header>Menu Configuration</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTopmenu\" min=\"0\" max=\"200\" step=\"1\" value=\"0\">\n      <input type=\"range\" inline title=\"Width  Hover\" name=\"widthsize\" min=\"14\" max=\"50\" step=\"1\" value=\"14\">\n      <input type=\"checkbox\" title=\"Show Logo\" name=\"showLogo\">\n      <input type=\"checkbox\" title=\"Brand Name\" name=\"showName\">\n         <input type=\"range\" title=\"Logo Size\" inline name=\"logoSize\" min=\"2\" max=\"8\" step=\"0.1\" value=\"8\" condition=\"showLogo\">\n         <input type=\"range\" title=\"Icon Size\" inline name=\"iconSize\" min=\"30\" max=\"60\" step=\"1\" value=\"30\">      \n      <input type=\"range\" inline title=\"Items Count\" name=\"iconsCount\" min=\"1\" max=\"10\" step=\"1\" value=\"1\">  \n        <input type=\"color\" title=\"Bar Color\" name=\"bgcolormenu\" value=\"#000000\">\n             <input type=\"range\" title=\"Opacity\" inline name=\"Opacitybarmenu\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\"> \n                   <input type=\"range\" title=\"Opacity Hover\" inline name=\"OpacitybarmenuHover\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\">  \n        <input type=\"color\" title=\"Hover Color\" name=\"bgcolormenu1\" value=\"#cccccc\">\n        <input type=\"color\" title=\"Icon Color\" name=\"bgcolormenu2\" value=\"#ffffff\">\n        <input type=\"color\" title=\"Icon Hover Color\" name=\"bgcolormenu3\" value=\"#0f7699\">\n        <input type=\"range\" inline title=\"Items Count\" name=\"iconsCount\" min=\"1\" max=\"10\" step=\"1\" value=\"6\">\n        <input type=\"checkbox\" title=\"Icon at Bottom\" name=\"lastchild\" condition=\"paddingTopmenu==0\">\n\n\n    </mbr-parameters> \n\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n\t<aside class=\"sidebar\">\n\t\t\t<nav>\n\t\t\t\t<ul class=\"sidebar__nav\">\n                         \n         \n                   \t<li>\n\t\t\t\t\t\t<a href=\"index.html#header5-9\" class=\"sidebar__nav__link\">\n\t\t\t\t\t\t\t<i mbr-icon class=\"mbr-iconfont mbri-info\" style=\"font-size: {{iconSize}}px;\"></i>\n                          \t<span class=\"sidebar__nav__text\" mbr-text>소개</span>\n                        </a>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li mbr-if=\"iconsCount > 1\">\n\t\t\t\t\t\t<a href=\"index.html#features4-b\" class=\"sidebar__nav__link\">\n\t\t\t\t\t\t\t<i mbr-icon class=\"mbr-iconfont mbri-briefcase\" style=\"font-size: {{iconSize}}px;\"></i>\n                          \t<span class=\"sidebar__nav__text\" mbr-text>비지니스</span>\n\t\t\t\t\t\t</a>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li mbr-if=\"iconsCount > 2\">\n\t\t\t\t\t\t<a href=\"#\" class=\"sidebar__nav__link\">\n\t\t\t\t\t\t\t<i mbr-icon class=\"mbr-iconfont mbri-responsive\" style=\"font-size: {{iconSize}}px;\"></i>\n                          \t<span class=\"sidebar__nav__text\" mbr-text>포트폴리오</span>\n\t\t\t\t\t\t</a>\n\t\t\t\t\t</li>\n                  \t<li mbr-if=\"iconsCount > 3\">\n\t\t\t\t\t\t<a href=\"#\" class=\"sidebar__nav__link\">\n\t\t\t\t\t\t\t<i mbr-icon class=\"mbr-iconfont mbri-bootstrap\" style=\"font-size: {{iconSize}}px;\"></i>\n                          \t<span class=\"sidebar__nav__text\" mbr-text>블로그</span>\n\t\t\t\t\t\t</a>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li mbr-if=\"iconsCount > 4\">\n\t\t\t\t\t\t<a href=\"#\" class=\"sidebar__nav__link\">\n\t\t\t\t\t\t\t<i mbr-icon class=\"mbr-iconfont mbri-question\" style=\"font-size: {{iconSize}}px;\"></i>\n                          \t<span class=\"sidebar__nav__text\" mbr-text>문의</span>\n\t\t\t\t\t\t</a>\n\t\t\t\t\t</li>\n                  \t<li mbr-if=\"iconsCount > 5\">\n\t\t\t\t\t\t<a href=\"#\" class=\"sidebar__nav__link\">\n\t\t\t\t\t\t\t<i mbr-icon class=\"mbr-iconfont mbri-help\" style=\"font-size: {{iconSize}}px;\"></i>\n                          \t<span class=\"sidebar__nav__text\" mbr-text>카카오톡</span>\n\t\t\t\t\t\t</a>\n\t\t\t\t\t</li>\n                  \t\t\t\t\t<li mbr-if=\"iconsCount > 6\">\n\t\t\t\t\t\t<a href=\"#\" class=\"sidebar__nav__link\">\n\t\t\t\t\t\t\t<i mbr-icon class=\"mbr-iconfont mbri-question\" style=\"font-size: {{iconSize}}px;\"></i>\n                          \t<span class=\"sidebar__nav__text\" mbr-text>Page 7</span>\n\t\t\t\t\t\t</a>\n\t\t\t\t\t</li>\n                  \t\t\t\t\t<li mbr-if=\"iconsCount > 7\">\n\t\t\t\t\t\t<a href=\"#\" class=\"sidebar__nav__link\">\n\t\t\t\t\t\t\t<i mbr-icon class=\"mbr-iconfont mbri-github\" style=\"font-size: {{iconSize}}px;\"></i>\n                          \t<span class=\"sidebar__nav__text\" mbr-text>Page 8</span>\n\t\t\t\t\t\t</a>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li mbr-if=\"iconsCount > 8\">\n\t\t\t\t\t\t<a href=\"#\" class=\"sidebar__nav__link\">\n\t\t\t\t\t\t\t<i mbr-icon class=\"mbr-iconfont mbri-setting3\" style=\"font-size: {{iconSize}}px;\"></i>\n                          \t<span class=\"sidebar__nav__text\" mbr-text>Page 9</span>\n\t\t\t\t\t\t</a>\n\t\t\t\t\t</li>\n                  \t\t\t\t\t<li mbr-if=\"iconsCount > 9\">\n\t\t\t\t\t\t<a href=\"#\" class=\"sidebar__nav__link\">\n\t\t\t\t\t\t\t<i mbr-icon class=\"mbr-iconfont mbri-rocket\" style=\"font-size: {{iconSize}}px;\"></i>\n                          \t<span class=\"sidebar__nav__text\" mbr-text>Page 10</span>\n\t\t\t\t\t\t</a>\n\t\t\t\t\t</li>\n\n\t\t\t\t</ul>\n\t\t\t</nav>\n\t\t</aside>\n\n <div mbr-class=\"{'hidden': isPublish}\" style=\"padding:1rem; background-color:#c1c1c1;\">\n   <div class=\"align-center\">\n              <h10> <br><br><br><br><br><br>Simply Left Menu<br><br>\n        Click the \"gear\" icon to change the layout of the Simply Left Menu bar. This text will be removed on preview/publish.<br><br><br><br><br><br></h10>\n\t\t\t\t\n    </div></div>\n</section>",
+          "_cid": "z3k3mM84IT",
+          "_anchor": "design-block-z3k3mM84IT",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [],
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            ".progress-container": {
+              "z-index": "20000",
+              "position": "fixed",
+              "width": "100%",
+              "height": "(@LineHeight * 1px)",
+              "background": "@BckColor",
+              "top": "(@TopLine * 1px)"
+            },
+            ".progress-bar": {
+              "height": "(@LineHeight * 1px)",
+              "background": "@Linecolor",
+              "width": "0%"
+            },
+            "& when (@Stickyzen2 = false)": {
+              ".sticky2": {
+                "position": "fixed",
+                "top": "0",
+                "width": "100%"
+              }
+            },
+            ".hidden": {
+              "display": "none"
+            },
+            "H10": {
+              "color": "#767676"
+            }
+          },
+          "_name": "design-block",
+          "_customHTML": "<section mbr-id=\"_anchor\" class=\"_customHTML\">\n \n  \n     <mbr-parameters>\n<hr><header>Scroll Indicator</header>\n        \n       <input type=\"color\" title=\"Background Color\" name=\"BckColor\" value=\"#ffffff\">\n        <input type=\"color\" title=\"Line Color\" name=\"Linecolor\" value=\"#000000\">\n       <input type=\"range\" title=\"Line Height\" name=\"LineHeight\" min=\"1\" max=\"15\" step=\"1\" value=\"8\">\n        <input type=\"range\" title=\"Top Position\" name=\"TopLine\" min=\"1\" max=\"300\" step=\"1\" value=\"1\">\n      <input type=\"checkbox\" title=\"Sticky\" name=\"Stickyzen2\" checked>\n    </mbr-parameters> \n \n  <div class=\"progress-container\" id=\"myHeader\">\n    <div class=\"progress-bar\" id=\"myBar\"></div>\n  </div>      \n  \n<script type=\"text/javascript\">\nwindow.onscroll = function() {myFunction()};\nvar header = document.getElementById(\"myHeader\");\n// Get the offset position of the navbar\nvar sticky = header.offsetTop;\nfunction myFunction() {\n  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;\n  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;\n  var scrolled = (winScroll / height) * 100;\n  document.getElementById(\"myBar\").style.width = scrolled + \"%\";\n  \n   if (window.pageYOffset > sticky) {\n    header.classList.add(\"sticky2\");\n  } else {\n    header.classList.remove(\"sticky2\");\n  }\n  \n  \n}\n \n        \n</script>\n\n <div mbr-class=\"{'hidden': isPublish}\" style=\"padding:1rem; background-color:#c1c1c1;\">\n   <div class=\"align-center\">\n              <h10> <br><br><br><br><br><br>Scroll Indicator - Progress bar<br>\n        Click the \"gear\" icon to change the layout of the social bar. This text will be removed on preview/publish.<br><br><br><br><br><br><br><br></h10>\n\t\t\t\t\n    </div></div>\n</section>",
+          "_cid": "ubvjxAay1H",
+          "_anchor": "design-block-ubvjxAay1H",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
         {
           "alias": false,
           "_styles": {
@@ -660,131 +824,6 @@
           "_customHTML": "<section class=\"features1\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' &amp;&amp; bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <header>Size</header>\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"3\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"3\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Show Links\" name=\"showLink\" checked=\"\">\n        <header>Additional</header>\n        <input type=\"color\" title=\"Icons Color 1\" name=\"IconsColor1\" value=\"#EF6384\" selected=\"\">\n        <input type=\"color\" title=\"Icons Color 2\" name=\"IconsColor2\" value=\"#7e7e7e\" selected=\"\">\n        <input type=\"color\" title=\"Card Background\" name=\"cardBg\" value=\"#f3f3f3\" selected=\"\">\n        <select title=\"Cards\" name=\"cardsAmount\">\n          <option value=\"1\">1</option>\n          <option value=\"2\">2</option>\n          <option value=\"3\" selected=\"\">3</option>\n          <option value=\"4\">4</option>\n        </select>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax=\"\">\n          <input type=\"image\" title=\"Image\" value=\"../_images/man-3.jpg\" parallax=\"\">\n          <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected=\"\">\n          <input type=\"video\" title=\"Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked=\"\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n        <input type=\"range\" inline=\"\" title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div class=\"container\">\n        <div class=\"row\">\n            <div class=\"card col-12 col-md-6\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n              <div class=\"card-inner\">\n                <div class=\"card-img\">\n                  <span mbr-icon=\"\" class=\"mbr-iconfont mobi-mbri-file mobi-mbri icon-1\"></span>\n                </div>\n                <div class=\"card-box\">\n                  <h5 class=\"link align-left mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showLink\" data-app-selector=\".link\"><a href=\"#\" class=\"text-link text-black\">\n                        Easy Options</a></h5>\n                </div>\n                <div class=\"card-icon\">\n                  <span mbr-icon=\"\" class=\"mbr-iconfont icon-arrow mobi-mbri-right mobi-mbri\"></span>\n                </div>\n              </div>\n            </div>\n            <div class=\"card col-12 col-md-6\" mbr-if=\"cardsAmount > 1\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n              <div class=\"card-inner\">\n                <div class=\"card-img\">\n                  <span mbr-icon=\"\" class=\"mbr-iconfont mobi-mbri-desktop mobi-mbri icon-1\"></span>\n                </div>\n                <div class=\"card-box\">\n                  <h5 class=\"link align-left mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showLink\" data-app-selector=\".link\"><a href=\"#\" class=\"text-link text-black\">\n                    Live Statistics</a></h5>\n                </div>\n                <div class=\"card-icon\">\n                  <span mbr-icon=\"\" class=\"mbr-iconfont icon-arrow mobi-mbri-right mobi-mbri\"></span>\n                </div>\n              </div>\n                \n            </div>\n\n            <div class=\"card col-12 col-md-6\" mbr-if=\"cardsAmount > 2\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n              <div class=\"card-inner\">\n                <div class=\"card-img\">\n                    <span mbr-icon=\"\" class=\"mbr-iconfont mobi-mbri-idea mobi-mbri icon-1\"></span>\n                </div>\n                <div class=\"card-box\">\n                  <h5 class=\"link align-left mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showLink\" data-app-selector=\".link\"><a href=\"#\" class=\"text-link text-black\">\n                    Great Support</a></h5>\n                </div>\n                <div class=\"card-icon\">\n                  <span mbr-icon=\"\" class=\"mbr-iconfont icon-arrow mobi-mbri-right mobi-mbri\"></span>\n                </div>\n              </div>\n            </div>\n\n            <div class=\"card col-12 col-md-6\" mbr-if=\"cardsAmount > 3\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n              <div class=\"card-inner\">\n                <div class=\"card-img pb-3\">\n                    <span mbr-icon=\"\" class=\"mbri-desktop mbr-iconfont icon-1\"></span>\n                </div>\n                <div class=\"card-box\">\n                    <h5 class=\"link align-left mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showLink\" data-app-selector=\".link\"><a href=\"#\" class=\"text-link text-black\">\n                          Photography</a></h5>\n                </div>\n                <div class=\"card-icon\">\n                  <span mbr-icon=\"\" class=\"mbr-iconfont icon-arrow mobi-mbri-right mobi-mbri\"></span>\n                </div>\n              </div>\n            </div>\n        </div>\n    </div>\n\n</section>",
           "_cid": "rZJOHm2alK",
           "_anchor": "features1-1n",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
-            "p": {
-              "color": "#ecf0f1",
-              "line-height": "28px",
-              "font-size": "15px",
-              "padding-top": "50px"
-            },
-            "DIV": {
-              "color": "#ffffff"
-            },
-            "H10": {
-              "color": "#767676"
-            },
-            ".hidden": {
-              "display": "none"
-            },
-            ".sidebar": {
-              "z-index": "1001",
-              "background-color": "@bgcolormenu",
-              "opacity": "@Opacitybarmenu",
-              "position": "fixed",
-              "transition": "width 0.2s ease"
-            },
-            ".sidebar nav": {
-              "height": "100%"
-            },
-            ".sidebar .sidebar__nav": {
-              "display": "flex",
-              "height": "100%",
-              "list-style": "none",
-              "margin-top": "(@paddingTopmenu * 1px)",
-              "margin-right": "0px",
-              "margin-bottom": "0px",
-              "margin-left": "0px",
-              "padding": "0"
-            },
-            ".sidebar .sidebar__nav .sidebar__nav__link": {
-              "align-items": "center",
-              "color": "@bgcolormenu2",
-              "display": "flex",
-              "padding-left": "20px",
-              "text-decoration": "none",
-              "transition": "color 0.2s ease, background-color 0.2s ease"
-            },
-            ".sidebar .sidebar__nav .sidebar__nav__link:hover": {
-              "background-color": "@bgcolormenu1",
-              "color": "@bgcolormenu3"
-            },
-            ".sidebar .sidebar__nav .sidebar__nav__text": {
-              "display": "none",
-              "margin-left": "10px",
-              "margin-right": "auto",
-              "white-space": "nowrap"
-            },
-            ".sidebar .sidebar__nav i": {
-              "align-items": "center",
-              "display": "flex",
-              "justify-content": "center"
-            },
-            "@media (max-width: 572px)": {
-              ".sidebar": {
-                "bottom": "0",
-                "width": "100%"
-              },
-              ".sidebar .sidebar__nav": {
-                "justify-content": "center"
-              },
-              ".sidebar .sidebar__nav .sidebar__nav__link": {
-                "height": "100%",
-                "padding": "0.75em"
-              },
-              ".sidebar .sidebar__nav i": {
-                "font-size": "2rem"
-              }
-            },
-            "@media (min-width: 572px)": {
-              ".sidebar": {
-                "height": "100vh",
-                "left": "0",
-                "width": "var(--sidebar-width)"
-              },
-              ".sidebar:hover": {
-                "width": "(@widthsize * 1rem)",
-                "opacity": "@OpacitybarmenuHover"
-              },
-              ".sidebar .sidebar__nav": {
-                "flex-direction": "column"
-              },
-              "& when (@lastchild) and (@paddingTopmenu = 0)": {
-                ".sidebar .sidebar__nav li:last-child": {
-                  "margin-top": "auto"
-                }
-              },
-              ".sidebar .sidebar__nav .sidebar__nav__link": {
-                "padding": "1em"
-              },
-              ".sidebar:hover .sidebar__nav .sidebar__nav__text": {
-                "display": "inline"
-              },
-              ".sidebar .sidebar__nav i": {
-                "font-size": "2.5rem"
-              }
-            },
-            "@media (max-height: 434px)": {
-              ".sidebar": {
-                "overflow-y": "scroll"
-              }
-            },
-            ":root": {
-              "--sidebar-width": "4.5em"
-            }
-          },
-          "_name": "design-block",
-          "_customHTML": "<section mbr-id=\"_anchor\" class=\"_customHTML\">\n \n  \n    <mbr-parameters>\n<hr><header>Menu Configuration</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTopmenu\" min=\"0\" max=\"200\" step=\"1\" value=\"0\">\n      <input type=\"range\" inline title=\"Width  Hover\" name=\"widthsize\" min=\"14\" max=\"50\" step=\"1\" value=\"14\">\n      <input type=\"checkbox\" title=\"Show Logo\" name=\"showLogo\" checked>\n      <input type=\"checkbox\" title=\"Brand Name\" name=\"showName\" checked>\n         <input type=\"range\" title=\"Logo Size\" inline name=\"logoSize\" min=\"2\" max=\"8\" step=\"0.1\" value=\"8\" condition=\"showLogo\">\n         <input type=\"range\" title=\"Icon Size\" inline name=\"iconSize\" min=\"30\" max=\"60\" step=\"1\" value=\"30\">      \n      <input type=\"range\" inline title=\"Items Count\" name=\"iconsCount\" min=\"1\" max=\"10\" step=\"1\" value=\"1\">  \n        <input type=\"color\" title=\"Bar Color\" name=\"bgcolormenu\" value=\"#000000\">\n             <input type=\"range\" title=\"Opacity\" inline name=\"Opacitybarmenu\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\"> \n                   <input type=\"range\" title=\"Opacity Hover\" inline name=\"OpacitybarmenuHover\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\">  \n        <input type=\"color\" title=\"Hover Color\" name=\"bgcolormenu1\" value=\"#cccccc\">\n        <input type=\"color\" title=\"Icon Color\" name=\"bgcolormenu2\" value=\"#ffffff\">\n        <input type=\"color\" title=\"Icon Hover Color\" name=\"bgcolormenu3\" value=\"#0f7699\">\n        <input type=\"range\" inline title=\"Items Count\" name=\"iconsCount\" min=\"1\" max=\"10\" step=\"1\" value=\"6\">\n        <input type=\"checkbox\" title=\"Icon at Bottom\" name=\"lastchild\" condition=\"paddingTopmenu==0\">\n\n\n    </mbr-parameters> \n\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n\t<aside class=\"sidebar\">\n\t\t\t<nav>\n\t\t\t\t<ul class=\"sidebar__nav\">\n                         \n         \n                   \t<li>\n\t\t\t\t\t\t<a href=\"index.html#header5-9\" class=\"sidebar__nav__link\">\n\t\t\t\t\t\t\t<i mbr-icon class=\"mbr-iconfont mbri-italic\" style=\"font-size: {{iconSize}}px;\"></i>\n                          \t<span class=\"sidebar__nav__text\" mbr-text>소개</span>\n                        </a>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li mbr-if=\"iconsCount > 1\">\n\t\t\t\t\t\t<a href=\"index.html#features4-b\" class=\"sidebar__nav__link\">\n\t\t\t\t\t\t\t<i mbr-icon class=\"mbr-iconfont mbri-cash\" style=\"font-size: {{iconSize}}px;\"></i>\n                          \t<span class=\"sidebar__nav__text\" mbr-text>비지니스</span>\n\t\t\t\t\t\t</a>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li mbr-if=\"iconsCount > 2\">\n\t\t\t\t\t\t<a href=\"#\" class=\"sidebar__nav__link\">\n\t\t\t\t\t\t\t<i mbr-icon class=\"mbr-iconfont mbri-android\" style=\"font-size: {{iconSize}}px;\"></i>\n                          \t<span class=\"sidebar__nav__text\" mbr-text>포트폴리오</span>\n\t\t\t\t\t\t</a>\n\t\t\t\t\t</li>\n                  \t<li mbr-if=\"iconsCount > 3\">\n\t\t\t\t\t\t<a href=\"#\" class=\"sidebar__nav__link\">\n\t\t\t\t\t\t\t<i mbr-icon class=\"mbr-iconfont mbri-cart-full\" style=\"font-size: {{iconSize}}px;\"></i>\n                          \t<span class=\"sidebar__nav__text\" mbr-text>블로그</span>\n\t\t\t\t\t\t</a>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li mbr-if=\"iconsCount > 4\">\n\t\t\t\t\t\t<a href=\"#\" class=\"sidebar__nav__link\">\n\t\t\t\t\t\t\t<i mbr-icon class=\"mbr-iconfont mbri-apple\" style=\"font-size: {{iconSize}}px;\"></i>\n                          \t<span class=\"sidebar__nav__text\" mbr-text>문의</span>\n\t\t\t\t\t\t</a>\n\t\t\t\t\t</li>\n                  \t<li mbr-if=\"iconsCount > 5\">\n\t\t\t\t\t\t<a href=\"#\" class=\"sidebar__nav__link\">\n\t\t\t\t\t\t\t<i mbr-icon class=\"mbr-iconfont mbri-sun\" style=\"font-size: {{iconSize}}px;\"></i>\n                          \t<span class=\"sidebar__nav__text\" mbr-text>Page 6</span>\n\t\t\t\t\t\t</a>\n\t\t\t\t\t</li>\n                  \t\t\t\t\t<li mbr-if=\"iconsCount > 6\">\n\t\t\t\t\t\t<a href=\"#\" class=\"sidebar__nav__link\">\n\t\t\t\t\t\t\t<i mbr-icon class=\"mbr-iconfont mbri-question\" style=\"font-size: {{iconSize}}px;\"></i>\n                          \t<span class=\"sidebar__nav__text\" mbr-text>Page 7</span>\n\t\t\t\t\t\t</a>\n\t\t\t\t\t</li>\n                  \t\t\t\t\t<li mbr-if=\"iconsCount > 7\">\n\t\t\t\t\t\t<a href=\"#\" class=\"sidebar__nav__link\">\n\t\t\t\t\t\t\t<i mbr-icon class=\"mbr-iconfont mbri-github\" style=\"font-size: {{iconSize}}px;\"></i>\n                          \t<span class=\"sidebar__nav__text\" mbr-text>Page 8</span>\n\t\t\t\t\t\t</a>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li mbr-if=\"iconsCount > 8\">\n\t\t\t\t\t\t<a href=\"#\" class=\"sidebar__nav__link\">\n\t\t\t\t\t\t\t<i mbr-icon class=\"mbr-iconfont mbri-setting3\" style=\"font-size: {{iconSize}}px;\"></i>\n                          \t<span class=\"sidebar__nav__text\" mbr-text>Page 9</span>\n\t\t\t\t\t\t</a>\n\t\t\t\t\t</li>\n                  \t\t\t\t\t<li mbr-if=\"iconsCount > 9\">\n\t\t\t\t\t\t<a href=\"#\" class=\"sidebar__nav__link\">\n\t\t\t\t\t\t\t<i mbr-icon class=\"mbr-iconfont mbri-rocket\" style=\"font-size: {{iconSize}}px;\"></i>\n                          \t<span class=\"sidebar__nav__text\" mbr-text>Page 10</span>\n\t\t\t\t\t\t</a>\n\t\t\t\t\t</li>\n\n\t\t\t\t</ul>\n\t\t\t</nav>\n\t\t</aside>\n\n <div mbr-class=\"{'hidden': isPublish}\" style=\"padding:1rem; background-color:#c1c1c1;\">\n   <div class=\"align-center\">\n              <h10> <br><br><br><br><br><br>Simply Left Menu<br><br>\n        Click the \"gear\" icon to change the layout of the Simply Left Menu bar. This text will be removed on preview/publish.<br><br><br><br><br><br></h10>\n\t\t\t\t\n    </div></div>\n</section>",
-          "_cid": "z3k3mM84IT",
-          "_anchor": "design-block-z3k3mM84IT",
-          "_PHPplaceholders": [],
-          "_JSplaceholders": [],
           "_protectedParams": [],
           "_global": false,
           "_once": false,
@@ -5819,7 +5858,7 @@
             }
           },
           "_name": "extClients2",
-          "_customHTML": "<section group=\"Additional Blocks\" class=\"extClients\">\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n    <mbr-parameters>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"8\">\n        <input type=\"range\" inline title=\"Items\" name=\"items\" min=\"1\" max=\"8\" value=\"5\" step=\"1\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#e1201d\">\n    </mbr-parameters>\n    <!-- End block parameters -->\n    <div class=\"container-fluid\">\n        <div class=\"row justify-content-space-between\">\n            <div class=\"col-md-12\">\n                <h1 class=\"mbr-section-title mbr-regular pb-3 align-center mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">Our Clients</h1>\n            </div>\n            <div class=\"col-lg-1 col-md-3 card\" mbr-if=\"items > 0\">\n                <img src=\"@PROJECT_PATH@/assets/images/16.png\">\n            </div>\n            <div class=\"col-lg-1 col-md-3 card\" mbr-if=\"items > 1\">\n                <img src=\"@PROJECT_PATH@/assets/images/27.png\">\n            </div>\n            <div class=\"col-lg-1 col-md-3 card\" mbr-if=\"items > 2\">\n                <img src=\"@PROJECT_PATH@/assets/images/38.png\">\n            </div>\n            <div class=\"col-lg-1 col-md-3 card\" mbr-if=\"items > 3\">\n                <img src=\"@PROJECT_PATH@/assets/images/49.png\">\n            </div>\n            <div class=\"col-lg-1 col-md-3 card\" mbr-if=\"items > 4\">\n                <img src=\"@PROJECT_PATH@/assets/images/510.png\">\n            </div>\n            <div class=\"col-lg-1 col-md-3 card\" mbr-if=\"items > 5\">\n                <img src=\"@PROJECT_PATH@/assets/images/16.png\">\n            </div>\n            <div class=\"col-lg-1 col-md-3 card\" mbr-if=\"items > 6\">\n                <img src=\"@PROJECT_PATH@/assets/images/27.png\">\n            </div>\n            <div class=\"col-lg-1 col-md-3 card\" mbr-if=\"items > 7\">\n                <img src=\"@PROJECT_PATH@/assets/images/38.png\">\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section group=\"Additional Blocks\" class=\"extClients\">\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n    <mbr-parameters>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"8\">\n        <input type=\"range\" inline title=\"Items\" name=\"items\" min=\"1\" max=\"8\" value=\"5\" step=\"1\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#e1201d\">\n    </mbr-parameters>\n    <!-- End block parameters -->\n    <div class=\"container-fluid\">\n        <div class=\"row justify-content-space-between\">\n            <div class=\"col-md-12\">\n                <h1 class=\"mbr-section-title mbr-regular pb-3 align-center mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">Our Clients</h1>\n            </div>\n            <div class=\"col-lg-1 col-md-3 card\" mbr-if=\"items > 0\">\n                <img src=\"@PROJECT_PATH@/assets/images/10.png\">\n            </div>\n            <div class=\"col-lg-1 col-md-3 card\" mbr-if=\"items > 1\">\n                <img src=\"@PROJECT_PATH@/assets/images/21.png\">\n            </div>\n            <div class=\"col-lg-1 col-md-3 card\" mbr-if=\"items > 2\">\n                <img src=\"@PROJECT_PATH@/assets/images/32.png\">\n            </div>\n            <div class=\"col-lg-1 col-md-3 card\" mbr-if=\"items > 3\">\n                <img src=\"@PROJECT_PATH@/assets/images/43.png\">\n            </div>\n            <div class=\"col-lg-1 col-md-3 card\" mbr-if=\"items > 4\">\n                <img src=\"@PROJECT_PATH@/assets/images/54.png\">\n            </div>\n            <div class=\"col-lg-1 col-md-3 card\" mbr-if=\"items > 5\">\n                <img src=\"@PROJECT_PATH@/assets/images/10.png\">\n            </div>\n            <div class=\"col-lg-1 col-md-3 card\" mbr-if=\"items > 6\">\n                <img src=\"@PROJECT_PATH@/assets/images/21.png\">\n            </div>\n            <div class=\"col-lg-1 col-md-3 card\" mbr-if=\"items > 7\">\n                <img src=\"@PROJECT_PATH@/assets/images/32.png\">\n            </div>\n        </div>\n    </div>\n</section>",
           "_anchor": "extClients2-1a",
           "_isUserblock": true,
           "_sourceTheme": "studiom4",
@@ -6522,39 +6561,6 @@
           "_customHTML": "<section class=\"header1\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"3\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked>\n        <input type=\"color\" title=\"Wave Color\" name=\"waveColor\" value=\"#ffffff\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"https://i.imgur.com/FLszoiX.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#7f1933\">\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"row justify-content-md-center\">\n            <div class=\"mbr-white col-md-10\">\n                <h1 class=\"mbr-section-title align-center mbr-bold pb-3 mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">Header Block with Wave</h1>\n                <h3 class=\"mbr-section-subtitle align-center mbr-light pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showSubTitle\">\n                    Beautiful mobile websites\n                </h3>\n                <p class=\"mbr-text align-center pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                    customize the color of the wave</p>\n                <div class=\"mbr-section-btn align-center\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\"><a class=\"btn btn-md btn-black\" href=\"https://mobirise.co\" data-app-placeholder=\"Type Text\">\n                        LEARN MORE</a></div>\n            </div>\n        </div>\n    </div>\n\n  <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1428.75 62.05\">\n    <path class=\"wave\" d=\"M-114,132s185,44,434,18c0,0,304-41,551,0,0,0,290.5,57.25,443.75.13v43.69H-114Z\" transform=\"translate(114 -131.78)\"></path>\n  </svg>\n  \n</section>",
           "_cid": "EgScUs0mLu",
           "_anchor": "design-block-EgScUs0mLu",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
-            ".progress-container": {
-              "z-index": "20000",
-              "position": "fixed",
-              "width": "100%",
-              "height": "(@LineHeight * 1px)",
-              "background": "@BckColor",
-              "top": "(@TopLine * 1px)"
-            },
-            ".progress-bar": {
-              "height": "(@LineHeight * 1px)",
-              "background": "@Linecolor",
-              "width": "0%"
-            },
-            "& when (@Stickyzen2 = false)": {
-              ".sticky2": {
-                "position": "fixed",
-                "top": "0",
-                "width": "100%"
-              }
-            }
-          },
-          "_name": "design-block",
-          "_customHTML": "<section mbr-id=\"_anchor\" class=\"_customHTML\">\n \n  \n     <mbr-parameters>\n<hr><header>Scroll Indicator</header>\n        \n       <input type=\"color\" title=\"Background Color\" name=\"BckColor\" value=\"#ffffff\">\n        <input type=\"color\" title=\"Line Color\" name=\"Linecolor\" value=\"#000000\">\n       <input type=\"range\" title=\"Line Height\" name=\"LineHeight\" min=\"1\" max=\"15\" step=\"1\" value=\"9\">\n        <input type=\"range\" title=\"Top Position\" name=\"TopLine\" min=\"1\" max=\"300\" step=\"1\" value=\"1\">\n      <input type=\"checkbox\" title=\"Sticky\" name=\"Stickyzen2\" checked>\n    </mbr-parameters> \n \n  <div class=\"progress-container\" id=\"myHeader\">\n    <div class=\"progress-bar\" id=\"myBar\"></div>\n  </div>      \n  \n<script type=\"text/javascript\">\nwindow.onscroll = function() {myFunction()};\nvar header = document.getElementById(\"myHeader\");\n// Get the offset position of the navbar\nvar sticky = header.offsetTop;\nfunction myFunction() {\n  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;\n  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;\n  var scrolled = (winScroll / height) * 100;\n  document.getElementById(\"myBar\").style.width = scrolled + \"%\";\n  \n   if (window.pageYOffset > sticky) {\n    header.classList.add(\"sticky2\");\n  } else {\n    header.classList.remove(\"sticky2\");\n  }\n  \n  \n}\n \n        \n</script>\n\n <div mbr-class=\"{'hidden': isPublish}\" style=\"padding:1rem; background-color:#c1c1c1;\">\n   <div class=\"align-center\">\n              <h10> <br><br><br><br><br><br>Scroll Indicator - Progress bar<br><br>\n        Click the \"gear\" icon to change the layout of the social bar. This text will be removed on preview/publish.<br><br><br><br><br><br></h10>\n\t\t\t\t\n    </div></div>\n</section>",
-          "_cid": "S6JZvLv9pS",
-          "_anchor": "design-block-S6JZvLv9pS",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
